@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  li {
+    /* list-style-type: none; */
+  }
+  /* height: 100%;
+  background-color: black;
+  color-scheme: dark; */
+}

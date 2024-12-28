@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import Box from "./Box";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface SideBarProps {
   children: ReactNode;
@@ -13,28 +14,44 @@ const menuList = [
   {
     category: "UI-component",
     list: [
-      "Alert",
-      "Button",
-      "Card",
-      "Checkbox",
-      "Confirm",
-      "Input",
-      "Modal",
-      "Progress",
-      "Selector",
-      "Table",
+      { title: "Alert", link: "/Alert" },
+      { title: "Button", link: "/Button" },
+      { title: "Card", link: "/Card" },
+      { title: "Checkbox", link: "/Checkbox" },
+      { title: "Confirm", link: "/Confirm" },
+      { title: "Input", link: "/Input" },
+      { title: "Modal", link: "/Modal" },
+      { title: "Progress", link: "/Progress" },
+      { title: "Selector", link: "/Selector" },
     ],
   },
-  { category: "Clone Coding", list: ["Starbucks", "Movv", "농심 nav"] },
   {
-    category: "Portfolio",
-    list: ["Login Page", "Tiffany & Co.", "BARBOUR", "NARS", "SHAFT FINDER"],
+    category: "Side Project",
+    list: [
+      {
+        title: "Purple Place",
+        link: "https://purple-place.vercel.app/",
+      },
+    ],
+  },
+  {
+    category: "Clone Coding",
+    list: [
+      {
+        title: "Starbucks",
+        link: "https://elegant-begonia-dba8ef.netlify.app/",
+      },
+      { title: "Movv", link: "https://unrivaled-longma-60ac49.netlify.app/" },
+      {
+        title: "Nongshim nav",
+        link: "https://silver-frangollo-742fe8.netlify.app/",
+      },
+    ],
   },
 ];
 
 const SideBar: React.FC<SideBarProps> = ({ children }) => {
   const router = useRouter();
-
   return (
     <div className="flex h-full">
       <div className="hidden md:flex h-full w-[230px] shadow-md">
@@ -51,9 +68,15 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
                       <li
                         key={idx}
                         className="transition-all duration-400 cursor-pointer pt-1.5 duration-300 transform hover:translate-x-1.5 hover:font-semibold"
-                        data-cont="alert.html"
+                        onClick={() => {
+                          if (menu.category === "UI-component") {
+                            router.push(item.link);
+                          } else {
+                            window.open(item.link, "_blank");
+                          }
+                        }}
                       >
-                        <span>{item}</span>
+                        <span>{item.title}</span>
                       </li>
                     ))}
                   </ul>
@@ -61,7 +84,7 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
               </div>
             ))}
           </Box>
-          <button className="p-4" onClick={() => router.push("/")}>
+          <Link href="/">
             <Image
               src="/icons/home.svg"
               alt="홈"
@@ -69,7 +92,7 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
               height="24"
               className="hover:opacity-60 transition"
             />
-          </button>
+          </Link>
         </aside>
       </div>
       <main className="h-full flex-1 overflow-y-auto">{children}</main>

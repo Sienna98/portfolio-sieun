@@ -3,6 +3,7 @@ import { Figtree } from "next/font/google";
 
 import "../styles/globals.css";
 import SideBar from "@/components/Side-bar";
+import FloatingButton from "@/components/Floating-button";
 
 const font = Figtree({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <SideBar>{children}</SideBar>
+        <FloatingButton />
       </body>
     </html>
   );

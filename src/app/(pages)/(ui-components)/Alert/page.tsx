@@ -39,13 +39,13 @@ const AlertPage = () => {
           className="block w-36 h-12 text-sm font-medium text-[#58CE8F] bg-white border border-[#58CE8F] rounded-md transition duration-500 cursor-pointer hover:bg-[#58CE8F] hover:text-white"
           onClick={() => createAlert("success")}
         >
-          Alert-1
+          Success
         </button>
         <button
           className="block w-36 h-12 text-sm font-medium text-[#58CE8F] bg-white border border-[#58CE8F] rounded-md transition duration-500 cursor-pointer hover:bg-[#58CE8F] hover:text-white"
           onClick={() => createAlert("error")}
         >
-          Alert-2
+          Error
         </button>
       </div>
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[350px] p-5">

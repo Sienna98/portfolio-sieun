@@ -5,7 +5,7 @@ import "../styles/globals.css";
 import SideBar from "@/components/Side-bar";
 import FloatingButton from "@/components/Floating-button";
 
-const figtree = Figtree({ subsets: ["latin"] });
+const figTree = Figtree({ subsets: ["latin"] });
 const notoSansKr = Noto_Sans_KR({
   subsets: ["latin", "latin-ext"],
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${figtree.className} ${notoSansKr.className}`}>
+      <body className={`${figTree.className} ${notoSansKr.className}`}>
         <SideBar>{children}</SideBar>
         <FloatingButton />
       </body>

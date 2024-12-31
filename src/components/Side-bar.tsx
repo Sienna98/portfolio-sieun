@@ -100,7 +100,7 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
           </Link>
         </aside>
       </div>
-      <main className="h-full flex-1 overflow-y-auto">{children}</main>
+      <main className="relative h-full flex-1 overflow-y-auto">{children}</main>
     </div>
   );
 };

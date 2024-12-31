@@ -30,8 +30,9 @@ const menuList = [
     list: [
       {
         title: "Purple Place",
-        link: "https://purple-place.vercel.app/",
+        link: "https://purple-place.vercel.app",
       },
+      { title: "Jamongda", link: "https://jamongda.netlify.app" },
     ],
   },
   {
@@ -39,12 +40,12 @@ const menuList = [
     list: [
       {
         title: "Starbucks",
-        link: "https://elegant-begonia-dba8ef.netlify.app/",
+        link: "https://elegant-begonia-dba8ef.netlify.app",
       },
-      { title: "Movv", link: "https://unrivaled-longma-60ac49.netlify.app/" },
+      { title: "Movv", link: "https://unrivaled-longma-60ac49.netlify.app" },
       {
         title: "Nongshim nav",
-        link: "https://silver-frangollo-742fe8.netlify.app/",
+        link: "https://silver-frangollo-742fe8.netlify.app",
       },
     ],
   },
@@ -84,12 +85,12 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
               </div>
             ))}
           </Box>
-          <Link href="/">
+          <Link href="/" className="block p-3">
             <Image
               src="/icons/home.svg"
               alt="홈"
-              width="24"
-              height="24"
+              width="26"
+              height="26"
               className="hover:opacity-60 transition"
             />
           </Link>

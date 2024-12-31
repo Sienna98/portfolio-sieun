@@ -64,20 +64,25 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
                   <h2 className="text-[0.75rem] font-medium text-green-500">
                     {menu.category}
                   </h2>
-                  <ul className="mt-2">
+                  <ul className="mt-3 flex flex-col gap-1.5 items-start">
                     {menu.list.map((item, idx) => (
                       <li
+                        className="relative group inline cursor-pointer flex-shrink-0 flex-grow-0 basis-auto w-auto transition-transform duration-500 ease-in-out hover:translate-x-[5px]"
                         key={idx}
-                        className="transition-all duration-400 cursor-pointer pt-1.5 duration-300 transform hover:translate-x-1.5 hover:font-semibold"
-                        onClick={() => {
-                          if (menu.category === "UI-component") {
-                            router.push(item.link);
-                          } else {
-                            window.open(item.link, "_blank");
-                          }
-                        }}
                       >
-                        <span>{item.title}</span>
+                        <span
+                          className="relative z-10 transition-all duration-300 transform hover:font-semibold"
+                          onClick={() => {
+                            if (menu.category === "UI-component") {
+                              router.push(item.link);
+                            } else {
+                              window.open(item.link, "_blank");
+                            }
+                          }}
+                        >
+                          {item.title}
+                        </span>
+                        <span className="absolute bottom-[-2px] left-0 w-0 h-[10px] bg-[#A6F0C9] transition-all duration-500 group-hover:w-full"></span>
                       </li>
                     ))}
                   </ul>

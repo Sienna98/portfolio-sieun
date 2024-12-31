@@ -1,7 +1,6 @@
 "use client";
 
 import { ReactNode } from "react";
-import Box from "./Box";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -57,7 +56,7 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
     <div className="flex h-full">
       <div className="hidden md:flex h-full w-[230px] shadow-md">
         <aside className="h-[100vh] z-10 overflow-y-auto flex flex-col w-full justify-between">
-          <Box>
+          <div>
             {menuList.map((menu, idx) => (
               <div key={idx} className="border-b border-gray-200 p-5">
                 <div className="leading-5">
@@ -70,7 +69,7 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
                         className="relative group inline cursor-pointer flex-shrink-0 flex-grow-0 basis-auto w-auto transition-transform duration-500 ease-in-out hover:translate-x-[5px]"
                         key={idx}
                       >
-                        <span
+                        <h3
                           className="relative z-10 transition-all duration-300 transform hover:font-semibold"
                           onClick={() => {
                             if (menu.category === "UI-component") {
@@ -81,7 +80,7 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
                           }}
                         >
                           {item.title}
-                        </span>
+                        </h3>
                         <span className="absolute bottom-[-2px] left-0 w-0 h-[10px] bg-[#A6F0C9] transition-all duration-500 group-hover:w-full"></span>
                       </li>
                     ))}
@@ -89,7 +88,7 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
                 </div>
               </div>
             ))}
-          </Box>
+          </div>
           <Link href="/" className="block p-3">
             <Image
               src="/icons/home.svg"

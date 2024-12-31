@@ -1,9 +1,9 @@
 "use client";
 
-import { ReactNode } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import { ReactNode } from "react";
 
 interface SideBarProps {
   children: ReactNode;
@@ -52,6 +52,8 @@ const menuList = [
 
 const SideBar: React.FC<SideBarProps> = ({ children }) => {
   const router = useRouter();
+  const pathName = usePathname();
+
   return (
     <div className="flex h-full">
       <div className="hidden md:flex h-full w-[230px] shadow-md">
@@ -66,11 +68,15 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
                   <ul className="mt-3 flex flex-col gap-1.5 items-start">
                     {menu.list.map((item, idx) => (
                       <li
-                        className="relative group inline cursor-pointer flex-shrink-0 flex-grow-0 basis-auto w-auto transition-transform duration-500 ease-in-out hover:translate-x-[5px]"
                         key={idx}
+                        className={`relative group inline cursor-pointer flex-shrink-0 flex-grow-0 basis-auto w-auto transition-transform duration-500 ease-in-out hover:translate-x-[5px]  
+                          ${
+                            pathName === item.link &&
+                            "translate-x-[5px] font-semibold"
+                          }`}
                       >
                         <h3
-                          className="relative z-10 transition-all duration-300 transform hover:font-semibold"
+                          className="relative z-10 transition-all duration-300 transform"
                           onClick={() => {
                             if (menu.category === "UI-component") {
                               router.push(item.link);
@@ -81,7 +87,14 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
                         >
                           {item.title}
                         </h3>
-                        <span className="absolute bottom-[-2px] left-0 w-0 h-[10px] bg-[#A6F0C9] transition-all duration-500 group-hover:w-full"></span>
+                        <span
+                          className={`absolute bottom-[-2px] left-0 w-0 h-[10px] bg-[#A6F0C9] transition-all duration-500 group-hover:w-full`}
+                        />
+                        {pathName === item.link && (
+                          <span
+                            className={`absolute bottom-[-2px] left-0 h-[10px] bg-[#A6F0C9] transition-all duration-500 w-full`}
+                          />
+                        )}
                       </li>
                     ))}
                   </ul>

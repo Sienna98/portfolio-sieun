@@ -69,7 +69,7 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
                     {menu.list.map((item, idx) => (
                       <li
                         key={idx}
-                        className={`relative group inline cursor-pointer flex-shrink-0 flex-grow-0 basis-auto w-auto transition-transform duration-500 ease-in-out hover:translate-x-[5px]  
+                        className={`relative group inline cursor-pointer flex-shrink-0 flex-grow-0 basis-auto w-auto transition-transform duration-500 ease-in-out hover:translate-x-[5px] hover:font-semibold 
                           ${
                             pathName === item.link &&
                             "translate-x-[5px] font-semibold"

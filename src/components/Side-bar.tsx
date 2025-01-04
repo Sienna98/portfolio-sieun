@@ -10,6 +10,7 @@ interface SideBarProps {
 }
 
 const menuList = [
+  { category: "About", list: [{ title: "Experience", link: "/Experience" }] },
   {
     category: "UI-component",
     list: [
@@ -78,7 +79,10 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
                         <h3
                           className="relative z-10 transition-all duration-300 transform"
                           onClick={() => {
-                            if (menu.category === "UI-component") {
+                            if (
+                              menu.category === "UI-component" ||
+                              menu.category === "About"
+                            ) {
                               router.push(item.link);
                             } else {
                               window.open(item.link, "_blank");

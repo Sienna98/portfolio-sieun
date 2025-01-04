@@ -45,7 +45,7 @@ const menuList = [
         type: "window",
       },
       {
-        title: "Jamongda",
+        title: "Jamongda(Beta)",
         link: "https://jamongda.netlify.app",
         type: "window",
       },

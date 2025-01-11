@@ -7,6 +7,26 @@ export const menuList = [
     ],
   },
   {
+    category: "Side Project",
+    list: [
+      {
+        title: "Purple Place",
+        link: "/PurplePlace",
+        type: "router",
+      },
+      {
+        title: "Jamongda",
+        link: "/Jamongda",
+        type: "router",
+      },
+      {
+        title: "Nars",
+        link: "/Nars",
+        type: "router",
+      },
+    ],
+  },
+  {
     category: "UI-component",
     list: [
       { title: "Alert", link: "/Alert", type: "router" },
@@ -18,21 +38,6 @@ export const menuList = [
       { title: "Modal", link: "/Modal", type: "router" },
       { title: "Progress", link: "/Progress", type: "router" },
       { title: "Selector", link: "/Selector", type: "router" },
-    ],
-  },
-  {
-    category: "Side Project",
-    list: [
-      {
-        title: "Purple Place",
-        link: "https://purple-place.vercel.app",
-        type: "window",
-      },
-      {
-        title: "Jamongda(Beta)",
-        link: "/Jamongda",
-        type: "router",
-      },
     ],
   },
   {

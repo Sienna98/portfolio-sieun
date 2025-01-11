@@ -1,6 +1,8 @@
 "use client";
 
+import { EMAIL } from "@/constants/contact";
 import { menuList } from "@/data/sideBarMenuList";
+import { handleCopyEmail } from "@/utils/copyEmail";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { ReactNode } from "react";
@@ -66,21 +68,9 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
               </div>
             ))}
           </div>
-          <div className="flex pl-2">
+          <div className="flex gap-1 pl-4">
             <button
-              className="block px-1 py-3"
-              onClick={() => router.push("/")}
-            >
-              <Image
-                src="/icons/home.svg"
-                alt="홈"
-                width="26"
-                height="26"
-                className="hover:opacity-60 transition"
-              />
-            </button>
-            <button
-              className="block px-1 py-3"
+              className="block px-1 py-5 hover:opacity-60 transition"
               onClick={() =>
                 window.open("https://github.com/Sienna98", "_blank")
               }
@@ -88,13 +78,12 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
               <Image
                 src="/icons/github.svg"
                 alt="github"
-                width="26"
-                height="26"
-                className="hover:opacity-60 transition"
+                width="20"
+                height="20"
               />
             </button>
             <button
-              className="block px-1 py-3"
+              className="block px-1 py-5 hover:opacity-60 transition"
               onClick={() =>
                 window.open("https://velog.io/@tldms0827/posts", "_blank")
               }
@@ -102,9 +91,19 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
               <Image
                 src="/icons/velog.svg"
                 alt="velog"
-                width="26"
-                height="26"
-                className="hover:opacity-60 transition"
+                width="20"
+                height="20"
+              />
+            </button>
+            <button
+              className="block px-[5px] py-5 hover:opacity-60 transition"
+              onClick={() => handleCopyEmail(EMAIL)}
+            >
+              <Image
+                src="/icons/email.svg"
+                alt="email"
+                width="22"
+                height="22"
               />
             </button>
           </div>

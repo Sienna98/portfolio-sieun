@@ -4,6 +4,7 @@ import { Figtree } from "next/font/google";
 import "../styles/globals.css";
 import FloatingButton from "@/components/floating-button";
 import DesktopSideBar from "@/components/desktop-side-bar";
+import { ToastContainer } from "react-toastify";
 
 const figTree = Figtree({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`${figTree.className}`}>
         <DesktopSideBar>{children}</DesktopSideBar>
         <FloatingButton />
+        <ToastContainer />
       </body>
     </html>
   );

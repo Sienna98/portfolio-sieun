@@ -13,7 +13,7 @@ const PurplePlacePage = () => {
             <div className="text-[#969696] mt-1">좌석 예약 시스템</div>
           </div>
           <button
-            className="flex flex-col items-center gap-2"
+            className="flex flex-col items-center gap-2 "
             onClick={() =>
               window.open("https://purple-place.vercel.app", "_blank")
             }
@@ -56,17 +56,19 @@ const PurplePlacePage = () => {
             </ul>
           </div>
         ))}
-        <div className="w-full flex flex-col justify-center items-center gap-5 text-center">
+        <div className="w-full flex flex-col justify-center items-center gap-8 text-center">
           <Image
             src="/images/purple-place-1.png"
             alt="purple place"
             width="700"
             height="390"
           />
-          <p className="text-sm text-wrap">
-            2023년 5월, 사내 해커톤 &apos;퍼플톤&apos;이 진행되었습니다. <br />
-            전체적인 컨셉을 게더타운으로 지정하고 사용자가 직접 원하는 좌석을
-            선택하여 예약하는 방식의 UI로 작업을 진행하였습니다.
+          <p className="text-sm whitespace-pre-wrap break-keep">
+            {`회사의 자율좌석제 운영 시스템에서 직원 증가로 인한 불편함을 해소하기 위해
+사내 해커톤에 참여하였습니다.
+팀원들과의 회의를 통해 시스템의 전체적인 컨셉을 '게더타운'으로 정하고,
+회사의 도면을 시각화하여 직관적인 UI를 구현하는 아이디어를 제시했습니다.
+이를 바탕으로 자리 예약, 회의실 예약, 안마의자 예약, 게시판 기능 등을 개발하였습니다.`}
           </p>
           <Image
             src="/images/purple-place-4.png"
@@ -74,9 +76,13 @@ const PurplePlacePage = () => {
             width="700"
             height="390"
           />
-          <p className="text-sm text-wrap">
-            회사에서 요구한 몇가지 주요 기능들과 <br />
-            평소 있으면 좋겠다고 생각한 몇가지 기능까지 추가하여 완성하였습니다.
+          <p className="text-sm whitespace-pre-wrap break-keep">
+            {`한 달 간 퇴근 후와 주말을 포함해 늦은 시간까지 프로젝트에 집중하여,
+최종적으로 7개 팀 중 2위를 기록하며 인기상 1위를 수상하는 성과를 거두었습니다.
+이 과정에서 창의성과 실용성을 동시에 인정받을 수 있었습니다.
+촉박한 시간 안에서도 팀원들과 협력하며 서로 돕고 도우며 성장할 수 있었던 값진 경험이었습니다.
+이번 프로젝트를 통해 팀워크와 협업의 중요성을 다시 한번 깨달았으며,
+향후 프로젝트에도 큰 도움이 될 것이라고 생각합니다.`}
           </p>
         </div>
         <a

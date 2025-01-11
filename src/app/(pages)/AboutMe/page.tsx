@@ -1,6 +1,6 @@
 const AboutMePage = () => {
   return (
-    <article className="p-7 min-w-[375px] gap-10">
+    <article className="p-5 md:p-8 min-w-[375px]">
       <p>About me</p>
     </article>
   );

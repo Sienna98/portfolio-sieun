@@ -30,8 +30,8 @@ export const menuList = [
       },
       {
         title: "Jamongda(Beta)",
-        link: "https://jamongda.netlify.app",
-        type: "window",
+        link: "/Jamongda",
+        type: "router",
       },
     ],
   },

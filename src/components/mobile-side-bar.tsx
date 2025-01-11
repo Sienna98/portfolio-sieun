@@ -24,7 +24,12 @@ const MobileSideBar = ({
     >
       <div className="overflow-y-auto h-full">
         {menuList.map((menu, idx) => (
-          <div key={idx} className="border-b border-gray-200 p-5">
+          <div
+            key={idx}
+            className={`p-5 ${
+              idx !== menuList.length - 1 ? "border-b border-gray-200" : "pb-12"
+            }`}
+          >
             <div className="leading-5">
               <h2 className="text-[0.75rem] font-medium text-green-500">
                 {menu.category}

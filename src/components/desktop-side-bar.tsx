@@ -19,7 +19,12 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
         <aside className="h-[100dvh] z-10 overflow-y-auto flex flex-col w-full justify-between">
           <div>
             {menuList.map((menu, idx) => (
-              <div key={idx} className="border-b border-gray-200 p-5">
+              <div
+                key={idx}
+                className={`p-5 ${
+                  idx !== menuList.length - 1 ? "border-b border-gray-200" : ""
+                }`}
+              >
                 <div className="leading-5">
                   <h2 className="text-[0.75rem] font-medium text-green-500">
                     {menu.category}

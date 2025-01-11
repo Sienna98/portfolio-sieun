@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 
 import "../styles/globals.css";
-import FloatingButton from "@/components/Floating-button";
+import FloatingButton from "@/components/플로팅버튼";
 import DesktopSideBar from "@/components/사이드바";
 
 const figTree = Figtree({ subsets: ["latin"] });

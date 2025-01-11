@@ -74,7 +74,7 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
   const pathName = usePathname();
 
   return (
-    <div className="flex h-full">
+    <div className="flex w-full h-full fixed top-0 left-0">
       <div className="hidden md:flex h-full w-[230px] shadow-md">
         <aside className="h-[100vh] z-10 overflow-y-auto flex flex-col w-full justify-between">
           <div>

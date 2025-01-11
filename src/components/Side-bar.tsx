@@ -2,7 +2,6 @@
 
 import { menuList } from "@/data/sideBarMenuList";
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { ReactNode } from "react";
 
@@ -62,15 +61,48 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
               </div>
             ))}
           </div>
-          <Link href="/" className="block p-3">
-            <Image
-              src="/icons/home.svg"
-              alt="홈"
-              width="26"
-              height="26"
-              className="hover:opacity-60 transition"
-            />
-          </Link>
+          <div className="flex pl-2">
+            <button
+              className="block px-1 py-3"
+              onClick={() => router.push("/")}
+            >
+              <Image
+                src="/icons/home.svg"
+                alt="홈"
+                width="26"
+                height="26"
+                className="hover:opacity-60 transition"
+              />
+            </button>
+            <button
+              className="block px-1 py-3"
+              onClick={() =>
+                window.open("https://github.com/Sienna98", "_blank")
+              }
+            >
+              <Image
+                src="/icons/github-mark.svg"
+                alt="홈"
+                width="26"
+                height="26"
+                className="hover:opacity-60 transition"
+              />
+            </button>
+            <button
+              className="block px-1 py-3"
+              onClick={() =>
+                window.open("https://velog.io/@tldms0827/posts", "_blank")
+              }
+            >
+              <Image
+                src="/icons/velog-icon.png"
+                alt="홈"
+                width="26"
+                height="26"
+                className="hover:opacity-60 transition"
+              />
+            </button>
+          </div>
         </aside>
       </div>
       <main className="relative h-full flex-1 overflow-y-auto">{children}</main>

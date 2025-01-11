@@ -2,13 +2,8 @@ export const menuList = [
   {
     category: "About",
     list: [
+      { title: "About me", link: "/AboutMe", type: "router" },
       { title: "Experience", link: "/Experience", type: "router" },
-      { title: "GitHub", link: "https://github.com/Sienna98", type: "window" },
-      {
-        title: "Velog",
-        link: "https://velog.io/@tldms0827/posts",
-        type: "window",
-      },
     ],
   },
   {

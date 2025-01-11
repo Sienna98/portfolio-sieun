@@ -81,8 +81,8 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
               }
             >
               <Image
-                src="/icons/github-mark.svg"
-                alt="홈"
+                src="/icons/github.svg"
+                alt="github"
                 width="26"
                 height="26"
                 className="hover:opacity-60 transition"
@@ -95,8 +95,8 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
               }
             >
               <Image
-                src="/icons/velog-icon.png"
-                alt="홈"
+                src="/icons/velog.svg"
+                alt="velog"
                 width="26"
                 height="26"
                 className="hover:opacity-60 transition"

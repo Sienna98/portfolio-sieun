@@ -1,12 +1,27 @@
 import { menuList } from "@/data/sideBarMenuList";
+import { motion } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
 
-const MobileSideBar = () => {
+interface IMobileSideBarProps {
+  isSidebarOpen: boolean;
+  setIsSidebarOpen?: (value: boolean) => void;
+}
+
+const MobileSideBar = ({
+  isSidebarOpen,
+  setIsSidebarOpen,
+}: IMobileSideBarProps) => {
   const router = useRouter();
   const pathName = usePathname();
 
   return (
-    <aside className="fixed md:hidden top-0 right-0 w-1/2 h-[100vh] bg-[#FBFBFB] z-50">
+    <motion.div
+      initial={{ x: "100%" }}
+      animate={{ x: isSidebarOpen ? "0%" : "100%" }}
+      exit={{ x: "100%" }}
+      transition={{ type: "spring", stiffness: 300, damping: 30 }}
+      className="fixed top-0 right-0 w-1/2 max-w-[300px] h-full bg-white shadow-lg z-20 flex flex-col"
+    >
       <div>
         {menuList.map((menu, idx) => (
           <div key={idx} className="border-b border-gray-200 p-5">
@@ -29,8 +44,10 @@ const MobileSideBar = () => {
                       onClick={() => {
                         if (item.type === "router") {
                           router.push(item.link);
+                          setIsSidebarOpen?.(false);
                         } else {
                           window.open(item.link, "_blank");
+                          setIsSidebarOpen?.(false);
                         }
                       }}
                     >
@@ -51,7 +68,7 @@ const MobileSideBar = () => {
           </div>
         ))}
       </div>
-    </aside>
+    </motion.div>
   );
 };
 

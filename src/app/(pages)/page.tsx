@@ -1,6 +1,5 @@
 "use client";
 
-import MobileSideBar from "@/components/mobile-side-bar";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -30,7 +29,6 @@ const Home = () => {
           className="bg-[#58CE8F] rounded-full w-[20px] h-[20px] mb-[5px] md:w-[30px] md:h-[30px] md:mb-[10px] lg:w-[50px] lg:h-[50px] lg:mb-[20px]"
         />
       </div>
-      <MobileSideBar />
     </div>
   );
 };

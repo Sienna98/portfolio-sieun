@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
 
-import FloatingButton from "@/components/Floating-button";
-import SideBar from "@/components/Side-bar";
 import "../styles/globals.css";
+import FloatingButton from "@/components/Floating-button";
+import DesktopSideBar from "@/components/사이드바";
 
 const figTree = Figtree({ subsets: ["latin"] });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${figTree.className}`}>
-        <SideBar>{children}</SideBar>
+        <DesktopSideBar>{children}</DesktopSideBar>
         <FloatingButton />
       </body>
     </html>

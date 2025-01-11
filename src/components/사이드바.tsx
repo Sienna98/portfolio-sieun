@@ -9,7 +9,7 @@ interface SideBarProps {
   children: ReactNode;
 }
 
-const SideBar: React.FC<SideBarProps> = ({ children }) => {
+const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
   const router = useRouter();
   const pathName = usePathname();
 
@@ -110,4 +110,4 @@ const SideBar: React.FC<SideBarProps> = ({ children }) => {
   );
 };
 
-export default SideBar;
+export default DesktopSideBar;

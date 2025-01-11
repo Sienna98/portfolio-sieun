@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import { Figtree, Noto_Sans_KR } from "next/font/google";
+import { Figtree } from "next/font/google";
 
-import "../styles/globals.css";
-import SideBar from "@/components/Side-bar";
 import FloatingButton from "@/components/Floating-button";
+import SideBar from "@/components/Side-bar";
+import "../styles/globals.css";
 
 const figTree = Figtree({ subsets: ["latin"] });
-const notoSansKr = Noto_Sans_KR({
-  subsets: ["latin", "latin-ext"],
-});
 
 export const metadata: Metadata = {
   title: "SIEUN PORTFOLIO",
@@ -22,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${figTree.className} ${notoSansKr.className}`}>
+      <body className={`${figTree.className}`}>
         <SideBar>{children}</SideBar>
         <FloatingButton />
       </body>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <div className="relative h-[100vh] min-w-[375px] overflow-x-hidden p-[15px] md:p-[30px] lg:p-[5vh]">
+    <div className="relative h-[100vh] min-w-[375px] overflow-x-hidden p-[15px] md:p-[30px] lg:p-[5vh] figTree">
       <div className="block md:flex w-full h-full">
         <div className="w-full h-1/2 md:left md:w-1/2 md:h-full bg-[#58CE8F]"></div>
         <div className="w-full h-1/2 md:right md:w-1/2 md:h-full bg-[#FBFBFB]"></div>

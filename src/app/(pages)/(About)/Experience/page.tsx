@@ -4,9 +4,16 @@ const ExperiencePage = () => {
   return (
     <article className="p-7 min-w-[375px] gap-10">
       {ExperienceList.map((experience, idx) => (
-        <div className="block md:flex md:p-10 gap-3" key={idx}>
+        <div
+          className={`block mb-10 pb-10 md:flex md:p-10 md:mb-0 gap-3 ${
+            idx !== ExperienceList.length - 1 ? "border-b" : ""
+          }`}
+          key={idx}
+        >
           <div className="mb-10 w-full md:mb-0 md:w-1/5 min-w-[150px] flex flex-col gap-1">
-            <div className="font-semibold text-xl">{experience.title}</div>
+            <div className="font-semibold text-2xl md:text-xl">
+              {experience.title}
+            </div>
             <div className="text-[#969696] text-md">{experience.date}</div>
             <div className="text-sm">{experience.team}</div>
           </div>

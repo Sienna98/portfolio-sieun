@@ -20,9 +20,9 @@ const MobileSideBar = ({
       animate={{ x: isSidebarOpen ? "0%" : "100%" }}
       exit={{ x: "100%" }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      className="fixed top-0 right-0 w-1/2 max-w-[300px] h-full bg-white shadow-lg z-20 flex flex-col"
+      className="fixed top-0 right-0 w-1/2 max-w-[300px] min-w-[190px] h-full bg-white shadow-lg z-20 flex flex-col"
     >
-      <div>
+      <div className="overflow-y-auto h-full">
         {menuList.map((menu, idx) => (
           <div key={idx} className="border-b border-gray-200 p-5">
             <div className="leading-5">

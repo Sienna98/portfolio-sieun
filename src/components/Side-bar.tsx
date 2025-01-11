@@ -16,7 +16,7 @@ const menuList = [
       { title: "Experience", link: "/Experience", type: "router" },
       { title: "GitHub", link: "https://github.com/Sienna98", type: "window" },
       {
-        title: "Blog",
+        title: "Velog",
         link: "https://velog.io/@tldms0827/posts",
         type: "window",
       },

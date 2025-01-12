@@ -11,7 +11,7 @@ const ExperiencePage = () => {
           key={idx}
         >
           <div className="mb-10 w-full md:mb-0 md:w-1/5 min-w-[150px] flex flex-col gap-1">
-            <div className="font-semibold text-2xl md:text-xl">
+            <div className="font-bold text-2xl md:text-xl">
               {experience.title}
             </div>
             <div className="text-[#969696] text-md">{experience.date}</div>
@@ -19,11 +19,14 @@ const ExperiencePage = () => {
           </div>
           <div className="w-full flex flex-col gap-12 md:w-4/5">
             {experience.contents.map((experience, idx) => (
-              <div className="flex flex-col gap-2" key={idx}>
-                <h3 className="font-semibold text-lg">{experience.title}</h3>
-                <span className="text-[#969696] text-md">
-                  {experience.date}
-                </span>
+              <div className="flex flex-col gap-1 md:gap-2" key={idx}>
+                <div>
+                  <h3 className="font-semibold text-lg">{experience.title}</h3>
+                  <span className="text-[#969696] text-sm">
+                    {experience.date}
+                  </span>
+                </div>
+
                 <div className="mt-2">
                   <ul className="flex flex-col gap-3 pl-3">
                     {experience.list.map((contents, idx) => (

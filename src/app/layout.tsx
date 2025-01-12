@@ -10,7 +10,7 @@ const figTree = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "SIEUN PORTFOLIO",
-  description: "", // TODO: description 추가하기
+  description: "프론트엔드 개발자 이시은 포트폴리오",
 };
 
 export default function RootLayout({

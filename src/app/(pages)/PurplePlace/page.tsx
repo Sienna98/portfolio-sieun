@@ -1,6 +1,6 @@
 "use client";
 
-import { PurplePlaceData } from "@/data/purplePlaceData";
+import { purplePlaceData } from "@/data/sideProjectData";
 import Image from "next/image";
 
 const PurplePlacePage = () => {
@@ -13,7 +13,7 @@ const PurplePlacePage = () => {
             <div className="text-[#969696] mt-1">좌석 예약 시스템</div>
           </div>
           <button
-            className="flex flex-col items-center gap-2 "
+            className="flex flex-col items-center gap-2 hover:opacity-60 transition"
             onClick={() =>
               window.open("https://purple-place.vercel.app", "_blank")
             }
@@ -34,12 +34,12 @@ const PurplePlacePage = () => {
               - 팀(프론트 - 3명, 백엔드 - 3명)
             </span>
           </div>
-          <div className="mt-1">2023.05</div>
+          <div className="mt-1 text-sm">2023.05</div>
         </div>
-        {PurplePlaceData.map((data, idx) => (
+        {purplePlaceData.map((data, idx) => (
           <div
             className={`w-full ${
-              idx !== PurplePlaceData.length - 1 ? "border-b pb-8" : ""
+              idx !== purplePlaceData.length - 1 ? "border-b pb-8" : ""
             }`}
             key={idx}
           >

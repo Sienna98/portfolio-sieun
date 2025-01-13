@@ -28,9 +28,9 @@ const PurplePlacePage = () => {
           </button>
         </div>
         <div>
-          <div className="flex gap-2">
-            <div className="font-medium ">Design / Front-end</div>
-            <span className="text-[#969696]">
+          <div className="font-medium">
+            Design / Front-end
+            <span className="text-[#969696] ml-1.5">
               - 팀(프론트 - 3명, 백엔드 - 3명)
             </span>
           </div>

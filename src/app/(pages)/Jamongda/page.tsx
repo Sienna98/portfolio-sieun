@@ -30,9 +30,9 @@ const JamongdaPage = () => {
           </button>
         </div>
         <div>
-          <div className="flex gap-2">
-            <div className="font-medium ">Design / Front-end</div>
-            <span className="text-[#969696]">- 팀 (프론트 - 2명)</span>
+          <div className="font-medium">
+            Design / Front-end
+            <span className="text-[#969696] ml-1.5">- 팀 (프론트 - 2명)</span>
           </div>
           <div className="mt-1 text-sm">
             2024.10 - 2024.12 (디벨롭 작업 진행중)

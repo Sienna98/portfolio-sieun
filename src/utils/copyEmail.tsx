@@ -1,4 +1,4 @@
-import { toast } from "react-toastify";
+import { toast, Slide } from "react-toastify";
 
 export const handleCopyEmail = (email: string) => {
   navigator.clipboard
@@ -9,6 +9,7 @@ export const handleCopyEmail = (email: string) => {
         autoClose: 1200,
         hideProgressBar: true,
         pauseOnHover: true,
+        transition: Slide,
         style: {
           width: "320px",
           textAlign: "center",
@@ -22,6 +23,7 @@ export const handleCopyEmail = (email: string) => {
         autoClose: 1200,
         hideProgressBar: true,
         pauseOnHover: true,
+        transition: Slide,
         style: {
           width: "320px",
           textAlign: "center",

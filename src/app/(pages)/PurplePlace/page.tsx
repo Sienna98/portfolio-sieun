@@ -71,7 +71,7 @@ const PurplePlacePage = () => {
 이를 바탕으로 자리 예약, 회의실 예약, 안마의자 예약, 게시판 기능 등을 개발하였습니다.`}
           </p>
           <Image
-            src="/images/purple-place-4.png"
+            src="/images/purple-place-2.png"
             alt="purple place"
             width="700"
             height="390"

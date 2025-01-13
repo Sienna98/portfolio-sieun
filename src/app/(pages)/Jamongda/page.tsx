@@ -60,7 +60,7 @@ const JamongdaPage = () => {
         ))}
         <div className="w-full flex flex-col justify-center items-center gap-8 text-center">
           <Image
-            src="/images/jamongda.png"
+            src="/images/jamongda-1.png"
             alt="jamongda"
             width="740"
             height="398"

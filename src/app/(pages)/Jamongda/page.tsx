@@ -38,26 +38,6 @@ const JamongdaPage = () => {
             2024.10 - 2024.12 (디벨롭 작업 진행중)
           </div>
         </div>
-        {jamongdaData.map((data, idx) => (
-          <div
-            className={`w-full ${
-              idx !== jamongdaData.length - 1 ? "border-b pb-8" : ""
-            }`}
-            key={idx}
-          >
-            <h4 className="text-2xl font-semibold w-full">{data.title}</h4>
-            <ul className="pl-3 flex flex-col gap-2 mt-4">
-              {data.list.map((list, idx) => (
-                <li
-                  key={idx}
-                  className="before:content-['-'] before:pr-1.5 text-sm"
-                >
-                  {list}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
         <div className="w-full flex flex-col justify-center items-center gap-8 text-center">
           <Image
             src="/images/jamongda-1.png"
@@ -83,6 +63,26 @@ API 제작 및 연동 등을 직접 진행하면서 많은 것을 배울 수 있
 `}
           </p>
         </div>
+        {jamongdaData.map((data, idx) => (
+          <div
+            className={`w-full ${
+              idx !== jamongdaData.length - 1 ? "border-b pb-8" : ""
+            }`}
+            key={idx}
+          >
+            <h4 className="text-2xl font-semibold w-full">{data.title}</h4>
+            <ul className="pl-3 flex flex-col gap-2 mt-4">
+              {data.list.map((list, idx) => (
+                <li
+                  key={idx}
+                  className="before:content-['-'] before:pr-1.5 text-sm"
+                >
+                  {list}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </article>
   );

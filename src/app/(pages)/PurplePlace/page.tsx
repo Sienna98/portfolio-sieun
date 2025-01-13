@@ -36,26 +36,6 @@ const PurplePlacePage = () => {
           </div>
           <div className="mt-1 text-sm">2023.05</div>
         </div>
-        {purplePlaceData.map((data, idx) => (
-          <div
-            className={`w-full ${
-              idx !== purplePlaceData.length - 1 ? "border-b pb-8" : ""
-            }`}
-            key={idx}
-          >
-            <h4 className="text-2xl font-semibold w-full">{data.title}</h4>
-            <ul className="pl-3 flex flex-col gap-2 mt-4">
-              {data.list.map((list, idx) => (
-                <li
-                  key={idx}
-                  className="before:content-['-'] before:pr-1.5 text-sm"
-                >
-                  {list}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
         <div className="w-full flex flex-col justify-center items-center gap-8 text-center">
           <Image
             src="/images/purple-place-1.png"
@@ -85,6 +65,27 @@ const PurplePlacePage = () => {
 향후 프로젝트에도 큰 도움이 될 것이라고 생각합니다.`}
           </p>
         </div>
+
+        {purplePlaceData.map((data, idx) => (
+          <div
+            className={`w-full ${
+              idx !== purplePlaceData.length - 1 ? "border-b pb-8" : ""
+            }`}
+            key={idx}
+          >
+            <h4 className="text-2xl font-semibold w-full">{data.title}</h4>
+            <ul className="pl-3 flex flex-col gap-2 mt-4">
+              {data.list.map((list, idx) => (
+                <li
+                  key={idx}
+                  className="before:content-['-'] before:pr-1.5 text-sm"
+                >
+                  {list}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
         <a
           href="https://yozm.wishket.com/magazine/detail/2490/"
           target="_blank"

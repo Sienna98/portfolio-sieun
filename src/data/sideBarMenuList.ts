@@ -19,11 +19,6 @@ export const menuList = [
         link: "/Jamongda",
         type: "router",
       },
-      {
-        title: "Nars",
-        link: "/Nars",
-        type: "router",
-      },
     ],
   },
   {

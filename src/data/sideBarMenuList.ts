@@ -21,20 +21,20 @@ export const menuList = [
       },
     ],
   },
-  {
-    category: "UI-component",
-    list: [
-      { title: "Alert", link: "/Alert", type: "router" },
-      { title: "Button", link: "/Button", type: "router" },
-      { title: "Card", link: "/Card", type: "router" },
-      { title: "Checkbox", link: "/Checkbox", type: "router" },
-      { title: "Confirm", link: "/Confirm", type: "router" },
-      { title: "Input", link: "/Input", type: "router" },
-      { title: "Modal", link: "/Modal", type: "router" },
-      { title: "Progress", link: "/Progress", type: "router" },
-      { title: "Selector", link: "/Selector", type: "router" },
-    ],
-  },
+  // {
+  //   category: "UI-component",
+  //   list: [
+  //     { title: "Alert", link: "/Alert", type: "router" },
+  //     { title: "Button", link: "/Button", type: "router" },
+  //     { title: "Card", link: "/Card", type: "router" },
+  //     { title: "Checkbox", link: "/Checkbox", type: "router" },
+  //     { title: "Confirm", link: "/Confirm", type: "router" },
+  //     { title: "Input", link: "/Input", type: "router" },
+  //     { title: "Modal", link: "/Modal", type: "router" },
+  //     { title: "Progress", link: "/Progress", type: "router" },
+  //     { title: "Selector", link: "/Selector", type: "router" },
+  //   ],
+  // },
   {
     category: "Clone Coding",
     list: [

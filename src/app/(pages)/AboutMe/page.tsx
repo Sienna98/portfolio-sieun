@@ -78,7 +78,7 @@ const AboutMePage = () => {
           </span>
           을 중요한 가치로 여기며, 밝고 긍정적인 에너지로 팀 분위기를 이끌어가기
           위해 노력하고 있습니다. <br />
-          또한 예의와 긍정적인 자세를 바탕으로{" "}
+          또한 예의바른 태도와와 긍정적인 자세를 바탕으로{" "}
           <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
             <span className="z-10 relative font-semibold">
               효과적인 의사소통

@@ -6,7 +6,7 @@ import Image from "next/image";
 const PurplePlacePage = () => {
   return (
     <article className="lg:p-8 min-w-[375px] w-full flex justify-center items-center">
-      <div className="bg-white w-[768px] flex flex-col justify-center items-start shadow-lg py-10 px-5 lg:px-10 gap-8">
+      <div className="bg-white sm:w-full md:w-[768px] flex flex-col justify-center items-start lg:shadow-lg py-10 px-5 lg:px-10 gap-8">
         <div className="flex justify-between items-center w-full">
           <div>
             <h3 className="text-4xl font-semibold w-full">Purple Place</h3>

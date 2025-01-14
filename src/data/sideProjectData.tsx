@@ -20,10 +20,6 @@ export const purplePlaceData = [
     title: "📍작업 기여도",
     list: ["전체적인 기획 및 디자인 작업", "웹 퍼블리싱 작업", "프론트 작업"],
   },
-  {
-    title: "📍회고",
-    list: ["좋았던 점 : "],
-  },
 ];
 
 export const jamongdaData = [

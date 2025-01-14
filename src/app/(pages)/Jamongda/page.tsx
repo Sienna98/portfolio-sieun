@@ -44,7 +44,8 @@ const JamongdaPage = () => {
             alt="jamongda"
             width="740"
             height="398"
-            priority
+            placeholder="blur"
+            blurDataURL="/images/jamongda.base64"
           />
           <p className="text-sm whitespace-pre-wrap break-keep">
             {`평소 영어 단어를 암기할 때 단어장을 만들어 외우는 방식을 선호했습니다.

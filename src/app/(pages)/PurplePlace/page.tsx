@@ -42,7 +42,8 @@ const PurplePlacePage = () => {
             alt="purple place"
             width="700"
             height="390"
-            priority
+            placeholder="blur"
+            blurDataURL="/images/purple-place-1.base64"
           />
           <p className="text-sm whitespace-pre-wrap break-keep">
             {`회사의 자율좌석제 운영 시스템에서 직원 증가로 인한 불편함을 해소하기 위해
@@ -56,7 +57,8 @@ const PurplePlacePage = () => {
             alt="purple place"
             width="700"
             height="390"
-            priority
+            placeholder="blur"
+            blurDataURL="/images/purple-place-2.base64"
           />
           <p className="text-sm whitespace-pre-wrap break-keep">
             {`한 달 간 퇴근 후와 주말을 포함해 늦은 시간까지 프로젝트에 집중하여,

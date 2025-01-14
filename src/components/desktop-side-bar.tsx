@@ -13,6 +13,7 @@ interface SideBarProps {
 const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
   const router = useRouter();
   const pathName = usePathname();
+  const currentDate = new Date();
 
   return (
     <div className="flex w-full h-full fixed top-0 left-0 gap-1">
@@ -67,47 +68,65 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
               </div>
             ))}
           </div>
-          <div className="flex gap-[2px] pl-4">
-            <button
-              className="block px-1 py-5 hover:opacity-60 transition"
-              onClick={() =>
-                window.open("https://github.com/Sienna98", "_blank")
-              }
-            >
-              <img
-                src="/icons/github.svg"
-                alt="github"
-                width="20"
-                height="20"
-              />
-            </button>
-            <button
-              className="block px-1 py-5 hover:opacity-60 transition"
-              onClick={() =>
-                window.open("https://velog.io/@tldms0827/posts", "_blank")
-              }
-            >
-              <img src="/icons/velog.svg" alt="velog" width="20" height="20" />
-            </button>
-            <button
-              className="block px-[5px] py-5 hover:opacity-60 transition"
-              onClick={() =>
-                window.open("https://www.linkedin.com/in/sieunlee98", "_blank")
-              }
-            >
-              <img
-                src="/icons/linkedin.svg"
-                alt="linkedin"
-                width="20"
-                height="20"
-              />
-            </button>
-            <button
-              className="block px-[5px] py-5 hover:opacity-60 transition"
-              onClick={() => handleCopyEmail(EMAIL)}
-            >
-              <img src="/icons/email.svg" alt="email" width="22" height="22" />
-            </button>
+          <div>
+            <div className="flex gap-[2px] pl-4">
+              <button
+                className="block px-1 py-2 hover:opacity-60 transition"
+                onClick={() =>
+                  window.open("https://github.com/Sienna98", "_blank")
+                }
+              >
+                <img
+                  src="/icons/github.svg"
+                  alt="github"
+                  width="20"
+                  height="20"
+                />
+              </button>
+              <button
+                className="block px-1 py-2 hover:opacity-60 transition"
+                onClick={() =>
+                  window.open("https://velog.io/@tldms0827/posts", "_blank")
+                }
+              >
+                <img
+                  src="/icons/velog.svg"
+                  alt="velog"
+                  width="20"
+                  height="20"
+                />
+              </button>
+              <button
+                className="block px-[5px] py-2 hover:opacity-60 transition"
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/sieunlee98",
+                    "_blank"
+                  )
+                }
+              >
+                <img
+                  src="/icons/linkedin.svg"
+                  alt="linkedin"
+                  width="20"
+                  height="20"
+                />
+              </button>
+              <button
+                className="block px-[5px] py-2 hover:opacity-60 transition"
+                onClick={() => handleCopyEmail(EMAIL)}
+              >
+                <img
+                  src="/icons/email.svg"
+                  alt="email"
+                  width="22"
+                  height="22"
+                />
+              </button>
+            </div>
+            <div className="text-[10px] text-gray-400 px-5 pb-4">
+              © {currentDate.getFullYear()} SIEUN PORTFOLIO
+            </div>
           </div>
         </aside>
       </div>

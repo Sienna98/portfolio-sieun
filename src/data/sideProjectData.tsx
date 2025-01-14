@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 export const purplePlaceData = [
   {
     title: "📍주요 기능",
@@ -18,6 +19,10 @@ export const purplePlaceData = [
   {
     title: "📍작업 기여도",
     list: ["전체적인 기획 및 디자인 작업", "웹 퍼블리싱 작업", "프론트 작업"],
+  },
+  {
+    title: "📍회고",
+    list: ["좋았던 점 : "],
   },
 ];
 
@@ -41,7 +46,6 @@ export const jamongdaData = [
     list: [
       "전체적인 기획 및 디자인 작업 (100%)",
       "프론트 작업 (50%)",
-      // eslint-disable-next-line react/jsx-key
       <a
         href="https://www.figma.com/design/CCEAi3npvOFckyczGMSuZy/%EC%9E%90%EB%AA%BD%EB%8B%A4?node-id=0-1&m=dev&t=pOAoxBoyGNLt91S9-1"
         target="_blank"

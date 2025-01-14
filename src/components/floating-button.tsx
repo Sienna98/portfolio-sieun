@@ -48,6 +48,19 @@ const FloatingButton = () => {
             </button>
             <button
               className="p-3 bg-white rounded-full shadow"
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/sieunlee98", "_blank")
+              }
+            >
+              <Image
+                src="/icons/linkedin.svg"
+                alt="linkedin"
+                width="20"
+                height="20"
+              />
+            </button>
+            <button
+              className="p-3 bg-white rounded-full shadow"
               onClick={() => handleCopyEmail(EMAIL)}
             >
               <Image

@@ -68,7 +68,7 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
               </div>
             ))}
           </div>
-          <div className="flex gap-1 pl-4">
+          <div className="flex gap-[2px] pl-4">
             <button
               className="block px-1 py-5 hover:opacity-60 transition"
               onClick={() =>
@@ -91,6 +91,19 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
               <Image
                 src="/icons/velog.svg"
                 alt="velog"
+                width="20"
+                height="20"
+              />
+            </button>
+            <button
+              className="block px-[5px] py-5 hover:opacity-60 transition"
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/sieunlee98", "_blank")
+              }
+            >
+              <Image
+                src="/icons/linkedin.svg"
+                alt="linkedin"
                 width="20"
                 height="20"
               />

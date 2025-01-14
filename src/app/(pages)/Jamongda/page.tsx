@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const JamongdaPage = () => {
   return (
-    <article className="lg:p-8 min-w-[375px] w-full flex justify-center items-center">
-      <div className="bg-white sm:w-full md:w-[768px] flex flex-col justify-center items-start lg:shadow-lg py-10 px-5 pb-16 lg:px-10 gap-8">
+    <article className="lg:px-8 lg:py-14 min-w-[375px] w-full flex justify-center items-center">
+      <div className="bg-white w-full pt-10 pb-[100px] md:pb-[80px] md:w-[768px] flex flex-col justify-center items-start lg:shadow-lg  px-5 lg:px-10 gap-8">
         <div className="flex justify-between items-center w-full">
           <div>
             <h3 className="text-4xl font-semibold w-full">Jamongda</h3>
@@ -20,7 +20,7 @@ const JamongdaPage = () => {
               window.open("https://jamongda.netlify.app", "_blank")
             }
           >
-            <Image
+            <img
               src="/icons/external-link.svg"
               alt="바로가기"
               width="20"
@@ -44,6 +44,7 @@ const JamongdaPage = () => {
             alt="jamongda"
             width="740"
             height="398"
+            priority
           />
           <p className="text-sm whitespace-pre-wrap break-keep">
             {`평소 영어 단어를 암기할 때 단어장을 만들어 외우는 방식을 선호했습니다.

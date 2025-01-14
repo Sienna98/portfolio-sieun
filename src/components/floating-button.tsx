@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import MobileSideBar from "./mobile-side-bar";
@@ -26,7 +25,7 @@ const FloatingButton = () => {
                 window.open("https://github.com/Sienna98", "_blank")
               }
             >
-              <Image
+              <img
                 src="/icons/github.svg"
                 alt="github"
                 width="20"
@@ -39,12 +38,7 @@ const FloatingButton = () => {
                 window.open("https://velog.io/@tldms0827/posts", "_blank")
               }
             >
-              <Image
-                src="/icons/velog.svg"
-                alt="velog"
-                width="20"
-                height="20"
-              />
+              <img src="/icons/velog.svg" alt="velog" width="20" height="20" />
             </button>
             <button
               className="p-3 bg-white rounded-full shadow"
@@ -52,7 +46,7 @@ const FloatingButton = () => {
                 window.open("https://www.linkedin.com/in/sieunlee98", "_blank")
               }
             >
-              <Image
+              <img
                 src="/icons/linkedin.svg"
                 alt="linkedin"
                 width="20"
@@ -63,12 +57,7 @@ const FloatingButton = () => {
               className="p-3 bg-white rounded-full shadow"
               onClick={() => handleCopyEmail(EMAIL)}
             >
-              <Image
-                src="/icons/email.svg"
-                alt="email"
-                width="20"
-                height="20"
-              />
+              <img src="/icons/email.svg" alt="email" width="20" height="20" />
             </button>
           </div>
         </>
@@ -78,7 +67,7 @@ const FloatingButton = () => {
             className="p-3 bg-white rounded-full shadow md:hidden"
             onClick={() => setIsSidebarOpen(true)}
           >
-            <Image src="/icons/menu.svg" alt="메뉴" width="20" height="20" />
+            <img src="/icons/menu.svg" alt="메뉴" width="20" height="20" />
           </button>
           <button
             className="p-3 bg-white rounded-full shadow hover:opacity-60 transition"
@@ -87,7 +76,7 @@ const FloatingButton = () => {
               setIsSidebarOpen(false);
             }}
           >
-            <Image src="/icons/home.svg" alt="홈" width="20" height="20" />
+            <img src="/icons/home.svg" alt="홈" width="20" height="20" />
           </button>
         </div>
       )}

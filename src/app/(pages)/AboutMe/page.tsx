@@ -4,14 +4,15 @@ import Image from "next/image";
 
 const AboutMePage = () => {
   return (
-    <article className="lg:p-8 min-w-[375px] w-full md:h-full flex justify-center items-center">
-      <div className="bg-white w-full md:w-[768px] flex flex-col justify-center items-center px-7 py-10 md:px-10 md:py-10 lg:shadow-lg gap-10 text-center">
+    <article className="lg:p-8 min-w-[375px] w-full lg:h-full flex justify-center items-center">
+      <div className="bg-white w-full md:w-[768px] flex flex-col justify-center items-center px-7 py-10 mb-[100px] md:mb-[40px] md:px-10 md:py-10 lg:shadow-lg gap-10 text-center">
         <div>
           <Image
             src="/images/sieun-profile.jpg"
             alt="profile"
             width="250"
             height="250"
+            priority
           />
         </div>
         <p className="whitespace-pre-wrap break-keep text-sm leading-6">
@@ -76,7 +77,7 @@ const AboutMePage = () => {
           </span>
           을 중요한 가치로 여기며, 밝고 긍정적인 에너지로 팀 분위기를 이끌어가기
           위해 노력하고 있습니다. <br />
-          또한 예의와 긍정적인 자세를 바탕으로
+          또한 예의와 긍정적인 자세를 바탕으로{" "}
           <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
             <span className="z-10 relative font-semibold">
               효과적인 의사소통

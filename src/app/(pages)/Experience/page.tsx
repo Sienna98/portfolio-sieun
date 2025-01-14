@@ -2,7 +2,7 @@ import { ExperienceList } from "@/data/experienceData";
 
 const ExperiencePage = () => {
   return (
-    <article className="px-5 pb-5 md:px-8 md:pb-8 min-w-[375px] gap-10">
+    <article className="px-5 pb-5 mb-[60px] md:mb-8 md:px-8 md:pb-8 min-w-[375px] gap-10">
       {ExperienceList.map((experience, idx) => (
         <div
           className={`block py-14 md:flex gap-3 ${

@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const PurplePlacePage = () => {
   return (
-    <article className="lg:p-8 min-w-[375px] w-full flex justify-center items-center">
-      <div className="bg-white sm:w-full md:w-[768px] flex flex-col justify-center items-start lg:shadow-lg py-10 px-5 lg:px-10 gap-8">
+    <article className="lg:px-8 lg:py-14 min-w-[375px] w-full flex justify-center items-center">
+      <div className="bg-white w-full pt-10 pb-[100px] md:pb-[80px] md:w-[768px] flex flex-col justify-center items-start lg:shadow-lg  px-5 lg:px-10 gap-8">
         <div className="flex justify-between items-center w-full">
           <div>
             <h3 className="text-4xl font-semibold w-full">Purple Place</h3>
@@ -18,7 +18,7 @@ const PurplePlacePage = () => {
               window.open("https://purple-place.vercel.app", "_blank")
             }
           >
-            <Image
+            <img
               src="/icons/external-link.svg"
               alt="바로가기"
               width="20"
@@ -42,6 +42,7 @@ const PurplePlacePage = () => {
             alt="purple place"
             width="700"
             height="390"
+            priority
           />
           <p className="text-sm whitespace-pre-wrap break-keep">
             {`회사의 자율좌석제 운영 시스템에서 직원 증가로 인한 불편함을 해소하기 위해
@@ -55,6 +56,7 @@ const PurplePlacePage = () => {
             alt="purple place"
             width="700"
             height="390"
+            priority
           />
           <p className="text-sm whitespace-pre-wrap break-keep">
             {`한 달 간 퇴근 후와 주말을 포함해 늦은 시간까지 프로젝트에 집중하여,

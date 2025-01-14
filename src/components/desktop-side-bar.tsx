@@ -3,7 +3,6 @@
 import { EMAIL } from "@/constants/contact";
 import { menuList } from "@/data/sideBarMenuList";
 import { handleCopyEmail } from "@/utils/copyEmail";
-import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { ReactNode } from "react";
 
@@ -75,7 +74,7 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
                 window.open("https://github.com/Sienna98", "_blank")
               }
             >
-              <Image
+              <img
                 src="/icons/github.svg"
                 alt="github"
                 width="20"
@@ -88,12 +87,7 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
                 window.open("https://velog.io/@tldms0827/posts", "_blank")
               }
             >
-              <Image
-                src="/icons/velog.svg"
-                alt="velog"
-                width="20"
-                height="20"
-              />
+              <img src="/icons/velog.svg" alt="velog" width="20" height="20" />
             </button>
             <button
               className="block px-[5px] py-5 hover:opacity-60 transition"
@@ -101,7 +95,7 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
                 window.open("https://www.linkedin.com/in/sieunlee98", "_blank")
               }
             >
-              <Image
+              <img
                 src="/icons/linkedin.svg"
                 alt="linkedin"
                 width="20"
@@ -112,12 +106,7 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
               className="block px-[5px] py-5 hover:opacity-60 transition"
               onClick={() => handleCopyEmail(EMAIL)}
             >
-              <Image
-                src="/icons/email.svg"
-                alt="email"
-                width="22"
-                height="22"
-              />
+              <img src="/icons/email.svg" alt="email" width="22" height="22" />
             </button>
           </div>
         </aside>

@@ -21,7 +21,14 @@ export const ExperienceList = [
             ],
           },
         ],
-        images: "/images/kolonmall.png",
+        images: [
+          {
+            src: "/images/kolonmall.png",
+            alt: "코오롱몰",
+            width: 700,
+            height: 350,
+          },
+        ],
         skills: [
           "React",
           "TypeScript",
@@ -104,7 +111,14 @@ export const ExperienceList = [
             ],
           },
         ],
-        images: "/images/vertical.png",
+        images: [
+          {
+            src: "/images/vertical.png",
+            alt: "버티컬 사이트",
+            width: 670,
+            height: 350,
+          },
+        ],
         skills: [
           "React",
           "TypeScript",
@@ -214,7 +228,14 @@ export const ExperienceList = [
             ],
           },
         ],
-        images: "/images/ns-system.png",
+        images: [
+          {
+            src: "/images/ns-system.png",
+            alt: "앤스시스템",
+            width: 850,
+            height: 250,
+          },
+        ],
         skills: ["HTML", "CSS", "jQuery"],
       },
       {

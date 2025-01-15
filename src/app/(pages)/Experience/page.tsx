@@ -48,17 +48,18 @@ const ExperiencePage = () => {
                       </li>
                     ))}
                   </ul>
-                  {experience.images && (
-                    <div className="relative mt-5 ml-3 h-[350px] w-auto">
+                  {experience.images &&
+                    experience.images.map((img, idx) => (
                       <Image
-                        src={experience.images}
-                        alt="이미지"
-                        fill
-                        className="object-contain object-left"
+                        key={idx}
+                        src={img.src}
+                        alt={img.alt}
+                        width={img.width}
+                        height={img.height}
                         priority
+                        className="mt-5 ml-3"
                       />
-                    </div>
-                  )}
+                    ))}
                   <ul className="pl-3 mt-5 flex flex-wrap gap-2">
                     {experience.skills?.map((skill, idx) => (
                       <li

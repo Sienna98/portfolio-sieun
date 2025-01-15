@@ -12,8 +12,7 @@ const AboutMePage = () => {
             alt="profile"
             width="250"
             height="250"
-            placeholder="blur"
-            blurDataURL="/images/sieun-profile.base64"
+            priority
           />
         </div>
         <p className="whitespace-pre-wrap break-keep text-sm leading-6">

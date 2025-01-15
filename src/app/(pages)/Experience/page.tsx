@@ -1,4 +1,5 @@
 import { ExperienceList } from "@/data/experienceData";
+import Image from "next/image";
 
 const ExperiencePage = () => {
   return (
@@ -47,6 +48,17 @@ const ExperiencePage = () => {
                       </li>
                     ))}
                   </ul>
+                  {experience.images && (
+                    <div className="relative mt-5 ml-3 h-[350px] w-auto">
+                      <Image
+                        src={experience.images}
+                        alt="이미지"
+                        fill
+                        className="object-contain object-left"
+                        priority
+                      />
+                    </div>
+                  )}
                   <ul className="pl-3 mt-5 flex flex-wrap gap-2">
                     {experience.skills?.map((skill, idx) => (
                       <li

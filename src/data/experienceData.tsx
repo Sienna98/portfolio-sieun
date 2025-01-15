@@ -23,7 +23,7 @@ export const ExperienceList = [
           {
             subTitle: "이슈 해결하기",
             contents: [
-              <div className="leading-5">
+              <div className="leading-6">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [문제] </span>
                   <span
@@ -41,7 +41,7 @@ export const ExperienceList = [
                   한번에 로드하는 것이 효과적이지 못하다고 판단함.
                 </span>
               </div>,
-              <div className="leading-5">
+              <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [해결] </span>
                   <span
@@ -56,7 +56,7 @@ export const ExperienceList = [
                   있도록하고, 로딩시간동안 화면에 보여줄 UI도 추가로 작업함.
                 </span>
               </div>,
-              <div className="leading-5">
+              <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [문제] </span>
                   <span
@@ -75,7 +75,7 @@ export const ExperienceList = [
                   발생함.
                 </span>
               </div>,
-              <div className="leading-5">
+              <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [해결] </span>
                   <span

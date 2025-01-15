@@ -1,18 +1,13 @@
-"use client";
-
-import Image from "next/image";
-
 const AboutMePage = () => {
   return (
     <article className="lg:p-8 min-w-[375px] w-full lg:h-full flex justify-center items-center">
       <div className="bg-white w-full md:w-[768px] flex flex-col justify-center items-center px-7 py-10 mb-[100px] md:mb-[40px] md:px-10 md:py-10 lg:shadow-lg gap-10 text-center">
         <div>
-          <Image
+          <img
             src="/images/sieun-profile.jpg"
             alt="profile"
             width="250"
             height="250"
-            priority
           />
         </div>
         <p className="whitespace-pre-wrap break-keep text-sm leading-6">

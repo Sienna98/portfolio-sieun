@@ -57,7 +57,7 @@ const ExperiencePage = () => {
                         width={img.width}
                         height={img.height}
                         priority
-                        className="mt-5 ml-3"
+                        className="pt-5 md:pl-3"
                       />
                     ))}
                   <ul className="pl-3 mt-5 flex flex-wrap gap-2">

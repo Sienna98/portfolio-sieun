@@ -28,23 +28,25 @@ const ExperiencePage = () => {
                   </span>
                 </div>
 
-                <div className="mt-2">
-                  <ul className="flex flex-col gap-3 pl-3">
+                <div className="mt-2 md:pl-2">
+                  <ul className="flex flex-col gap-3">
                     {experience.list.map((contents, idx) => (
-                      <li key={idx} className="flex flex-col gap-2">
+                      <li key={idx} className="flex flex-col gap-1">
                         {"subTitle" in contents && (
-                          <h4 className="font-medium text-sm">
+                          <h4 className="font-semibold text-sm">
                             {contents.subTitle}
                           </h4>
                         )}
-                        {contents.contents.map((content, idx) => (
-                          <p
-                            className="before:content-['-'] before:pr-1.5 text-sm"
-                            key={idx}
-                          >
-                            {content}
-                          </p>
-                        ))}
+                        <ul className="flex flex-col gap-1">
+                          {contents.contents.map((content, idx) => (
+                            <li
+                              key={idx}
+                              className="before:content-['-'] before:pr-1.5 text-sm flex"
+                            >
+                              {content}
+                            </li>
+                          ))}
+                        </ul>
                       </li>
                     ))}
                   </ul>
@@ -57,10 +59,10 @@ const ExperiencePage = () => {
                         width={img.width}
                         height={img.height}
                         priority
-                        className="pt-5 md:pl-3"
+                        className="pt-5"
                       />
                     ))}
-                  <ul className="pl-3 mt-5 flex flex-wrap gap-2">
+                  <ul className="mt-5 flex flex-wrap gap-2">
                     {experience.skills?.map((skill, idx) => (
                       <li
                         className="inline-block bg-[#58CE8F] text-white rounded-md px-2 py-1 text-sm"

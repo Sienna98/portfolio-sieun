@@ -41,7 +41,7 @@ const ExperiencePage = () => {
                           {contents.contents.map((content, idx) => (
                             <li
                               key={idx}
-                              className="before:content-['-'] before:pr-1.5 text-sm flex"
+                              className="before:content-['-'] before:pr-1.5 text-sm flex whitespace-pre-wrap break-keep"
                             >
                               {content}
                             </li>

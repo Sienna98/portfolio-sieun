@@ -36,9 +36,9 @@ export const ExperienceList = [
                   </span>
                   개인정보 처리방침 약관 내용이 전부 하드코딩으로 된 파일이다
                   보니 개정된 날짜마다 파일 경로를 모두 생성해야하는 이슈가
-                  있었음. 또 한번에 조회할 수 있는 약관은 선택한 날짜에 해당하는
-                  약관 하나의 내용인데 그와 상관없이 많은 양의 텍스트를 한번에
-                  로드하는 것이 효과적이지 못하다고 판단함.
+                  있었음. <br /> 또 한번에 조회할 수 있는 약관은 선택한 날짜에
+                  해당하는 약관 하나의 내용인데 그와 상관없이 많은 양의 텍스트를
+                  한번에 로드하는 것이 효과적이지 못하다고 판단함.
                 </span>
               </div>,
               <div className="leading-5">
@@ -51,6 +51,7 @@ export const ExperienceList = [
                 <span>
                   &nbsp;선택된 날짜에 해당되는 디렉토리 내부에 컴포넌트가 화면에
                   노출될 수 있도록 Dynamic Routes를 활용하여 파일 경로를 지정함.
+                  <br />
                   또한 Dynamic Import로 필요한 시점에 약관 파일을 불러올 수
                   있도록하고, 로딩시간동안 화면에 보여줄 UI도 추가로 작업함.
                 </span>
@@ -67,10 +68,11 @@ export const ExperienceList = [
                     &nbsp;useContext와 Provider :&nbsp;
                   </span>
                   공통 배너 컴포넌트에 CMS에서 내려주는 투명 헤더 값을 기반으로
-                  화면에 노출되는 헤더 스타일이 달라지도록 수정이 필요했음. 이를
-                  위해 useContext로 전달받는 panel 값을 사용해 헤더 스타일을
-                  변경하도록 구현함. 이 방식은 메인 페이지에서는 정상적으로
-                  작동했지만, 서브 페이지에서는 context 에러가 발생함.
+                  화면에 노출되는 헤더 스타일이 달라지도록 수정이 필요했음.
+                  <br /> 이를 위해 useContext로 전달받는 panel 값을 사용해 헤더
+                  스타일을 변경하도록 구현함. 이 방식은 메인 페이지에서는
+                  정상적으로 작동했지만, 서브 페이지에서는 context 에러가
+                  발생함.
                 </span>
               </div>,
               <div className="leading-5">
@@ -82,10 +84,11 @@ export const ExperienceList = [
                 </span>
                 <span>
                   &nbsp;확인해보니 메인 페이지 layout은 해당 context의
-                  provider로 감싸져 있지만, 서브페이지는 감싸져 있지 않았고 이로
-                  인해 서브 페이지 내부에서 내려주는 panel값이 없어 context
-                  에러가 발생했음. 메인페이지와 서브페이지에서 공통으로 활용할
-                  수 있는 provider를 추가하여 context 에러를 해결함.
+                  provider로 감싸져 있지만 서브페이지는 감싸져 있지 않았고,
+                  <br /> 이로 인해 서브 페이지 내부에서 내려주는 panel값이 없어
+                  context 에러가 발생했음. <br />
+                  메인페이지와 서브페이지에서 공통으로 활용할 수 있는 provider를
+                  추가하여 context 에러를 해결함.
                 </span>
                 &nbsp;&nbsp;
                 <a

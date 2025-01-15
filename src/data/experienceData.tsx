@@ -153,6 +153,14 @@ export const ExperienceList = [
             ],
           },
         ],
+        images: [
+          {
+            src: "/images/purple-place-1.png",
+            alt: "purple place",
+            width: 620,
+            height: 350,
+          },
+        ],
         skills: ["React", "TypeScript", "Next.js", "Styled-Components"],
       },
       {
@@ -224,7 +232,7 @@ export const ExperienceList = [
           {
             contents: [
               "자사 프로젝트 소개 사이트 퍼블리싱 작업 진행, 사용자가 직관적으로 정보를 확인할 수 있도록 디자인 및 레이아웃 구현.",
-              "자사 신규 앱 퍼블리싱 작업 진행, 사용자 중심의 인터페이스와 기능 구현.",
+              "자사 신규 앱 디자인/퍼블리싱 작업 진행, 사용자 중심의 인터페이스와 기능 구현.",
             ],
           },
         ],

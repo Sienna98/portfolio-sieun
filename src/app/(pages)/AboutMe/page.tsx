@@ -1,34 +1,19 @@
 "use client";
 
+import { commonMotion, staggerMotion } from "@/motions/common-motions";
 import { motion } from "framer-motion";
-
-const commonMotion = {
-  start: {
-    opacity: 0,
-    translateY: 20,
-  },
-  end: {
-    opacity: 1,
-    translateY: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeInOut",
-      staggerChildren: 0.2,
-    },
-  },
-};
 
 const AboutMePage = () => {
   return (
     <article className="lg:p-8 min-w-[375px] w-full lg:h-full flex justify-center items-center">
       <motion.div
         className="bg-white w-full md:w-[768px] flex flex-col justify-center items-center px-7 py-10 mb-[100px] md:mb-[40px] md:px-10 md:py-10 lg:shadow-lg gap-10 text-center"
-        variants={commonMotion}
+        variants={staggerMotion}
         initial="start"
         whileInView="end"
         viewport={{ once: true }}
       >
-        <motion.div variants={commonMotion}>
+        <motion.div variants={staggerMotion}>
           <img
             src="/images/sieun-profile.jpg"
             alt="profile"

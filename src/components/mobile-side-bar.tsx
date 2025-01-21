@@ -1,4 +1,4 @@
-import { menuList } from "@/data/sideBarMenuList";
+import { menuList } from "@/data/side-bar-menu-list";
 import { motion } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
 

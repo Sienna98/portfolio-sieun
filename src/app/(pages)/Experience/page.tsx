@@ -1,40 +1,10 @@
 "use client";
 
-import { ExperienceList } from "@/data/experienceData";
+import { ExperienceList } from "@/data/experience-data";
+import { commonMotion, staggerMotion } from "@/motions/common-motions";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
-
-const commonMotion = {
-  start: {
-    opacity: 0,
-    translateY: 20,
-  },
-  end: {
-    opacity: 1,
-    translateY: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const staggerMotion = {
-  start: {
-    opacity: 0,
-    translateY: 20,
-  },
-  end: {
-    opacity: 1,
-    translateY: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeInOut",
-      staggerChildren: 0.2,
-    },
-  },
-};
 
 const ExperiencePage = () => {
   const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});

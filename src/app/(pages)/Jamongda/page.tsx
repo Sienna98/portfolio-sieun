@@ -1,13 +1,24 @@
 "use client";
 
-import { jamongdaData } from "@/data/sideProjectData";
+import { jamongdaData } from "@/data/side-project-data";
+import { commonMotion, staggerMotion } from "@/motions/common-motions";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const JamongdaPage = () => {
   return (
     <article className="lg:px-8 lg:py-14 min-w-[375px] w-full flex justify-center items-center">
-      <div className="bg-white w-full pt-10 pb-[100px] md:pb-[80px] md:w-[768px] flex flex-col justify-center items-start lg:shadow-lg  px-5 lg:px-10 gap-8">
-        <div className="flex justify-between items-center w-full">
+      <motion.div
+        variants={staggerMotion}
+        initial="start"
+        whileInView="end"
+        viewport={{ once: true }}
+        className="bg-white w-full pt-10 pb-[100px] md:pb-[80px] md:w-[768px] flex flex-col justify-center items-start lg:shadow-lg  px-5 lg:px-10 gap-8"
+      >
+        <motion.div
+          variants={commonMotion}
+          className="flex justify-between items-center w-full"
+        >
           <div>
             <h3 className="text-4xl font-semibold w-full">Jamongda</h3>
             <div className="text-[#969696] mt-1">
@@ -28,24 +39,32 @@ const JamongdaPage = () => {
             />
             <span className="text-sm text-[#969696]">바로가기</span>
           </button>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div variants={commonMotion}>
           <div className="font-medium">
             Design / Front-end
             <span className="text-[#969696] ml-1.5">- 팀 (프론트 - 2명)</span>
           </div>
           <div className="mt-1 text-sm">2024.10 - 작업중</div>
-        </div>
-        <div className="w-full flex flex-col justify-center items-center gap-8 text-center">
-          <Image
-            src="/images/jamongda-1.png"
-            alt="jamongda"
-            width="740"
-            height="398"
-            loading="eager"
-            priority
-          />
-          <p className="text-sm whitespace-pre-wrap break-keep leading-6">
+        </motion.div>
+        <motion.div
+          variants={staggerMotion}
+          className="w-full flex flex-col justify-center items-center gap-8 text-center"
+        >
+          <motion.div variants={commonMotion}>
+            <Image
+              src="/images/jamongda-1.png"
+              alt="jamongda"
+              width="740"
+              height="398"
+              loading="eager"
+              priority
+            />
+          </motion.div>
+          <motion.p
+            variants={commonMotion}
+            className="text-sm whitespace-pre-wrap break-keep leading-6"
+          >
             {`평소 영어 단어를 암기할 때 단어장을 만들어 외우는 방식을 선호했습니다.
 하지만 시험지를 직접 손으로 제작하면 한 번만 사용할 수 있다는 비효율성이 늘 아쉬웠습니다.
 이를 개선하기 위해 단어장 앱을 활용해보자는 생각으로 여러 앱을 찾아봤으나,
@@ -61,10 +80,14 @@ API 제작 및 연동 등을 직접 진행하면서 많은 것을 배울 수 있
 
 현재도 추가 개발 진행 중이며, 완성도 높은 서비스를 제공하기 위해 지속적으로 개선해 나가겠습니다.
 `}
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
         {jamongdaData.map((data, idx) => (
-          <div
+          <motion.div
+            variants={commonMotion}
+            initial="start"
+            whileInView="end"
+            viewport={{ once: true, amount: 0.5 }}
             className={`w-full ${
               idx !== jamongdaData.length - 1 ? "border-b pb-8" : ""
             }`}
@@ -81,9 +104,9 @@ API 제작 및 연동 등을 직접 진행하면서 많은 것을 배울 수 있
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </article>
   );
 };

@@ -1,7 +1,7 @@
 "use client";
 
 import { EMAIL } from "@/constants/contact";
-import { menuList } from "@/data/sideBarMenuList";
+import { menuList } from "@/data/side-bar-menu-list";
 import { handleCopyEmail } from "@/utils/copyEmail";
 import { usePathname, useRouter } from "next/navigation";
 import { ReactNode } from "react";

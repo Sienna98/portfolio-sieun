@@ -134,6 +134,44 @@ export const ExperienceList = [
               "다양한 페이지에서 공통으로 활용되는 영역을 효율적으로 관리하기 위해 Zustand를 활용한 상태 관리 로직 개발.",
             ],
           },
+          {
+            subTitle: "이슈 해결하기",
+            contents: [
+              <div className="leading-6">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [문제] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  <span className="font-semibold pl-1">
+                    &nbsp;대용량 동영상 파일 업로드 :&nbsp;
+                  </span>
+                  현업에게 전달받은 동영상 파일이 용량이 매우 커 업로드 시간 및
+                  서버 비용에 대한 문제가 발생함. <br />
+                  용량을 줄여서 전달할 수 있는지 문의 하였으나, 고화질 동영상을
+                  사용해야 하는 상황이라 해결이 어려웠음.
+                </span>
+              </div>,
+              <div className="leading-6 mt-1.5">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [해결] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  &nbsp;동영상 파일을 서버에 업로드하는 대신, 유투브 채널에
+                  업로드하여 iframe으로 불러오는 방식으로 변경하는 것이 어떤지
+                  제안함. <br />
+                  기존에 구현 해두었던 동영상 컴포넌트를, 유투브 영상을 팝업으로
+                  띄울 수 있도록 수정하여 작업함. 이를 통해 고화질의 영상을
+                  사용하며 서버 비용을 절감할 수 있었음.
+                </span>
+              </div>,
+            ],
+          },
         ],
         skills: [
           "React",
@@ -190,6 +228,110 @@ export const ExperienceList = [
               >
                 코오롱스포츠 온라인 수선센터 인트로 메인 바로가기 (링크)
               </a>,
+            ],
+          },
+          {
+            subTitle: "이슈 해결하기",
+            contents: [
+              <div className="leading-6">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [문제] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  <span className="font-semibold pl-1">
+                    &nbsp;대용량 동영상 파일 업로드 :&nbsp;
+                  </span>
+                  현업에게 전달받은 동영상 파일이 용량이 매우 커 업로드 시간 및
+                  서버 비용에 대한 문제가 발생함. <br />
+                  용량을 줄여서 전달할 수 있는지 문의 하였으나, 고화질 동영상을
+                  사용해야 하는 상황이라 해결이 어려웠음.
+                </span>
+              </div>,
+              <div className="leading-6 mt-1.5">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [해결] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  &nbsp;동영상 파일을 서버에 업로드하는 대신, 유투브 채널에
+                  업로드하여 iframe으로 불러오는 방식으로 변경하는 것이 어떤지
+                  제안함. <br />
+                  기존에 구현 해두었던 동영상 컴포넌트를, 유투브 영상을 팝업으로
+                  띄울 수 있도록 수정하여 작업함. 이를 통해 고화질의 영상을
+                  사용하며 서버 비용을 절감할 수 있었음.
+                </span>
+              </div>,
+              <div className="leading-6">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [문제] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  <span className="font-semibold pl-1">
+                    &nbsp;숏폼 컴포넌트 슬라이드 이슈 :&nbsp;
+                  </span>
+                  Swiper를 커스텀하여 만든 숏폼 컴포넌트에서 슬라이드가 loop로
+                  설정되어 있을 때, 다음 슬라이드가 화면에 제대로 노출되지 않는
+                  이슈가 발생함.
+                </span>
+              </div>,
+              <div className="leading-6 mt-1.5">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [해결] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  &nbsp;loopedSlides 옵션을 활용하여 loop로 설정된 슬라이드 중
+                  몇개를 미리 복제하여 무한 루프가 부드럽게 작동할 수 있도록
+                  수정함.
+                </span>
+              </div>,
+              <div className="leading-6">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [장애] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  <span className="font-semibold pl-1">
+                    &nbsp;엣지 케이스 테스트 :&nbsp;
+                  </span>
+                  한페이지에 아이템이 4개가 노출되는 슬라이드 컴포넌트 작업 후
+                  개발자 테스트를 진행할 때, 상품을 5개 이상으로만 계속 추가하여
+                  테스트를 진행함. <br />
+                  이로 인해 페이지가 1개가 노출되는 화면의 테스트를 진행하지
+                  못함. 배포 후 페이지가 1개일 때 null 처리 해둔 로직에서 에러가
+                  발생함.
+                </span>
+              </div>,
+              <div className="leading-6 mt-1.5">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [해결] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  &nbsp;에러가 발생한 시간과 그때 추가된 컴포넌트들을 대조하여
+                  에러의 원인인 컴포넌트를 파악함. 이후 해당 컴포넌트를 에러가
+                  발생한 같은 환경으로 셋팅하여 디버깅 후 페이지가 1개 노출될 때
+                  에러가 발생함을 확인함. 이를 통해 테스트를 여러번 진행하는
+                  것보다 정확한 엣지케이스를 파악하여 진행하는 것이 더
+                  중요하다는 것을 깨달음. 같은 실수를 반복하지 않기 위해 개발자
+                  테스트 진행시 명확한 엣지케이스를 먼저 파악하고 리스트업하여
+                  테스트 진행중.
+                </span>
+              </div>,
             ],
           },
         ],
@@ -254,6 +396,42 @@ export const ExperienceList = [
             contents: [
               "메인 페이지의 패럴렉스 모션, 바이크 슬라이드 모션 등 화려한 인터렉션 작업 진행.",
               "전기바이크 시승 예약 시스템 개발, 직관적이고 편리한 예약 기능을 제공하여 사용자 만족도를 높임.",
+            ],
+          },
+          {
+            subTitle: "이슈 해결하기",
+            contents: [
+              <div className="leading-6">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [문제] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  <span className="font-semibold pl-1">
+                    &nbsp;Swiper 커스텀 컴포넌트 :&nbsp;
+                  </span>
+                  요청받은 슬라이드 컴포넌트 디자인에 2가지의 페이지네이션이
+                  필요했음. 페이지네이션을 커스텀하여 화면에 노출시키고 나니,
+                  <br />
+                  loop 옵션이 적용되었을 때 activeIndex 값을 정확하게 인지하지
+                  못하는 이슈가 발생.
+                </span>
+              </div>,
+              <div className="leading-6 mt-1.5">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [해결] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  &nbsp;Swiper 공식 문서를 확인하니 loop일때 사용가능한
+                  realIndex 옵션을 확인함. activeIndex를 realIndex로 변경하여
+                  해결함.
+                </span>
+              </div>,
             ],
           },
         ],

@@ -5,13 +5,14 @@ import Image from "next/image";
 import { useState } from "react";
 
 const ExperiencePage = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
 
-  const handleOpen = () => {
-    setIsOpen(!isOpen);
+  const handleOpen = (key: string) => {
+    setOpenItems((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
   };
-
-  console.log(isOpen);
 
   return (
     <article className="px-5 pb-5 mb-[60px] md:mb-8 md:px-8 md:pb-8 min-w-[375px]">
@@ -41,13 +42,13 @@ const ExperiencePage = () => {
 
                 <div className="mt-2 md:pl-2">
                   <ul className="flex flex-col gap-5">
-                    {experience.list.map((contents, idx) => (
-                      <li key={idx} className="flex flex-col">
+                    {experience.list.map((contents, contentIdx) => (
+                      <li key={contentIdx} className="flex flex-col">
                         {"subTitle" in contents &&
                           (contents.subTitle === "이슈 해결하기" ? (
                             <div
                               className="flex items-center gap-1"
-                              onClick={handleOpen}
+                              onClick={() => handleOpen(`${idx}-${contentIdx}`)}
                               role="button"
                             >
                               <h4 className="font-semibold text-sm">
@@ -59,7 +60,7 @@ const ExperiencePage = () => {
                                 width={20}
                                 height={20}
                                 className={`${
-                                  isOpen
+                                  openItems[`${idx}-${contentIdx}`]
                                     ? "transform rotate-180 transition"
                                     : "transform rotate-0 transition"
                                 }`}
@@ -74,7 +75,7 @@ const ExperiencePage = () => {
                           className={`flex flex-col gap-2 ${
                             "subTitle" in contents &&
                             contents.subTitle === "이슈 해결하기"
-                              ? isOpen
+                              ? openItems[`${idx}-${contentIdx}`]
                                 ? "max-h-[700px] lg:max-h-[450px] overflow-hidden transition-all duration-500 ease-in-out"
                                 : "max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
                               : ""

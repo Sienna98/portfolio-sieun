@@ -75,7 +75,7 @@ const ExperiencePage = () => {
                             "subTitle" in contents &&
                             contents.subTitle === "이슈 해결하기"
                               ? isOpen
-                                ? "max-h-[1000px] overflow-hidden transition-all duration-500 ease-in-out"
+                                ? "max-h-[700px] lg:max-h-[450px] overflow-hidden transition-all duration-500 ease-in-out"
                                 : "max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
                               : ""
                           }`}

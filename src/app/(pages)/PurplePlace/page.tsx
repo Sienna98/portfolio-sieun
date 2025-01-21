@@ -45,7 +45,7 @@ const PurplePlacePage = () => {
             loading="eager"
             priority
           />
-          <p className="text-sm whitespace-pre-wrap break-keep">
+          <p className="text-sm whitespace-pre-wrap break-keep leading-6">
             {`회사의 자율좌석제 운영 시스템에서 직원 증가로 인한 불편함을 해소하기 위해
 사내 해커톤에 참여하였습니다.
 팀원들과의 회의를 통해 시스템의 전체적인 컨셉을 '게더타운'으로 정하고,
@@ -60,7 +60,7 @@ const PurplePlacePage = () => {
             loading="eager"
             priority
           />
-          <p className="text-sm whitespace-pre-wrap break-keep">
+          <p className="text-sm whitespace-pre-wrap break-keep leading-6">
             {`한 달 간 퇴근 후와 주말을 포함해 늦은 시간까지 프로젝트에 집중하여,
 최종적으로 7개 팀 중 2위를 기록하며 인기상 1위를 수상하는 성과를 거두었습니다.
 이 과정에서 창의성과 실용성을 동시에 인정받을 수 있었습니다.

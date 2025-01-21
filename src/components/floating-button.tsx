@@ -70,13 +70,19 @@ const FloatingButton = () => {
             <img src="/icons/menu.svg" alt="메뉴" width="20" height="20" />
           </button>
           <button
-            className="p-3 bg-white rounded-full shadow hover:opacity-60 transition"
+            className=" bg-white rounded-full shadow"
             onClick={() => {
               router.push("/");
               setIsSidebarOpen(false);
             }}
           >
-            <img src="/icons/home.svg" alt="홈" width="20" height="20" />
+            <img
+              src="/icons/home.svg"
+              alt="홈"
+              width="20"
+              height="20"
+              className="block p-3 w-11 h-11 hover:opacity-60 transition"
+            />
           </button>
         </div>
       )}

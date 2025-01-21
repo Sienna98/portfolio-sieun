@@ -47,7 +47,7 @@ const JamongdaPage = () => {
             loading="eager"
             priority
           />
-          <p className="text-sm whitespace-pre-wrap break-keep">
+          <p className="text-sm whitespace-pre-wrap break-keep leading-6">
             {`평소 영어 단어를 암기할 때 단어장을 만들어 외우는 방식을 선호했습니다.
 하지만 시험지를 직접 손으로 제작하면 한 번만 사용할 수 있다는 비효율성이 늘 아쉬웠습니다.
 이를 개선하기 위해 단어장 앱을 활용해보자는 생각으로 여러 앱을 찾아봤으나,

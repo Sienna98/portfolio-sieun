@@ -46,7 +46,7 @@ const ExperiencePage = () => {
                 variants={staggerMotion}
                 initial="start"
                 whileInView="end"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.3 }}
               >
                 <motion.div variants={commonMotion}>
                   <h3 className="font-semibold text-lg">{experience.title}</h3>

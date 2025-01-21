@@ -50,6 +50,14 @@ export const jamongdaData = [
       >
         피그마 디자인 시안 바로가기 (링크)
       </a>,
+      <a
+        href="https://github.com/zamongda/jamongda"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[#969696] border-b border-gray-600"
+      >
+        GitHub 바로가기 (링크)
+      </a>,
     ],
   },
 ];

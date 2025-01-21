@@ -34,9 +34,7 @@ const JamongdaPage = () => {
             Design / Front-end
             <span className="text-[#969696] ml-1.5">- 팀 (프론트 - 2명)</span>
           </div>
-          <div className="mt-1 text-sm">
-            2024.10 - 2024.12 (디벨롭 작업 진행중)
-          </div>
+          <div className="mt-1 text-sm">2024.10 - 작업중</div>
         </div>
         <div className="w-full flex flex-col justify-center items-center gap-8 text-center">
           <Image

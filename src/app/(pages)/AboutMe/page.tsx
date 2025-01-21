@@ -115,7 +115,7 @@ const AboutMePage = () => {
           variants={commonMotion}
           className="whitespace-pre-wrap break-keep text-sm leading-6"
         >
-          앞으로는
+          앞으로는{" "}
           <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
             <span className="z-10 relative font-semibold">
               사용자 경험과 개발 효율성
@@ -130,7 +130,7 @@ const AboutMePage = () => {
           완성도를 높이고, 사용자의 요구를 깊이 이해하며 이를 구현해내는
           전문성과 창의성을 갖춘 개발자가 되고 싶습니다. 또한, 지금까지 저의
           멘토가 되어 주었던 수많은 시니어 개발자들처럼, 기술적 성과뿐만 아니라
-          팀원들과 함께 성장하며 긍정적인 영향을 미칠 수 있는
+          팀원들과 함께 성장하며 긍정적인 영향을 미칠 수 있는{" "}
           <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
             <span className="z-10 relative font-semibold">
               리더십 있는 개발자

@@ -1,8 +1,40 @@
 "use client";
 
 import { ExperienceList } from "@/data/experienceData";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+
+const commonMotion = {
+  start: {
+    opacity: 0,
+    translateY: 20,
+  },
+  end: {
+    opacity: 1,
+    translateY: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const staggerMotion = {
+  start: {
+    opacity: 0,
+    translateY: 20,
+  },
+  end: {
+    opacity: 1,
+    translateY: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+      staggerChildren: 0.2,
+    },
+  },
+};
 
 const ExperiencePage = () => {
   const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
@@ -23,27 +55,47 @@ const ExperiencePage = () => {
           }`}
           key={idx}
         >
-          <div className="mb-10 w-full md:mb-0 md:w-1/5 min-w-[150px] flex flex-col gap-1">
+          <motion.div
+            className="mb-10 w-full md:mb-0 md:w-1/5 min-w-[150px] flex flex-col gap-1"
+            variants={commonMotion}
+            initial="start"
+            whileInView="end"
+            viewport={{ once: true }}
+          >
             <div className="font-bold text-2xl md:text-xl">
               {experience.title}
             </div>
             <div className="text-[#969696] text-md">{experience.date}</div>
             <div className="text-sm">{experience.team}</div>
-          </div>
+          </motion.div>
           <div className="w-full flex flex-col gap-12 md:w-4/5">
             {experience.contents.map((experience, idx) => (
-              <div className="flex flex-col gap-1 md:gap-2" key={idx}>
-                <div>
+              <motion.div
+                className="flex flex-col gap-1 md:gap-2"
+                key={idx}
+                variants={staggerMotion}
+                initial="start"
+                whileInView="end"
+                viewport={{ once: true, amount: 0.5 }}
+              >
+                <motion.div variants={commonMotion}>
                   <h3 className="font-semibold text-lg">{experience.title}</h3>
                   <span className="text-[#969696] text-sm">
                     {experience.date}
                   </span>
-                </div>
+                </motion.div>
 
-                <div className="mt-2 md:pl-2">
-                  <ul className="flex flex-col gap-5">
+                <motion.div className="mt-2 md:pl-2" variants={staggerMotion}>
+                  <motion.ul
+                    className="flex flex-col gap-5"
+                    variants={staggerMotion}
+                  >
                     {experience.list.map((contents, contentIdx) => (
-                      <li key={contentIdx} className="flex flex-col">
+                      <motion.li
+                        key={contentIdx}
+                        className="flex flex-col"
+                        variants={commonMotion}
+                      >
                         {"subTitle" in contents &&
                           (contents.subTitle === "이슈 해결하기" ? (
                             <div
@@ -92,23 +144,27 @@ const ExperiencePage = () => {
                             </li>
                           ))}
                         </ul>
-                      </li>
+                      </motion.li>
                     ))}
-                  </ul>
+                  </motion.ul>
                   {experience.images &&
                     experience.images.map((img, idx) => (
-                      <Image
-                        key={idx}
-                        src={img.src}
-                        alt={img.alt}
-                        width={img.width}
-                        height={img.height}
-                        loading="eager"
-                        priority
-                        className="pt-6"
-                      />
+                      <motion.div key={idx} variants={commonMotion}>
+                        <Image
+                          src={img.src}
+                          alt={img.alt}
+                          width={img.width}
+                          height={img.height}
+                          loading="eager"
+                          priority
+                          className="pt-6"
+                        />
+                      </motion.div>
                     ))}
-                  <ul className="mt-8 flex flex-wrap gap-2">
+                  <motion.ul
+                    className="mt-8 flex flex-wrap gap-2"
+                    variants={commonMotion}
+                  >
                     {experience.skills?.map((skill, idx) => (
                       <li
                         className="inline-block bg-[#58CE8F] text-white rounded-md px-2 py-1 text-sm"
@@ -117,9 +173,9 @@ const ExperiencePage = () => {
                         {skill}
                       </li>
                     ))}
-                  </ul>
-                </div>
-              </div>
+                  </motion.ul>
+                </motion.div>
+              </motion.div>
             ))}
           </div>
         </div>

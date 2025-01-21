@@ -7,7 +7,7 @@ const AboutMePage = () => {
   return (
     <article className="lg:p-8 min-w-[375px] w-full lg:h-full flex justify-center items-center">
       <motion.div
-        className="bg-white w-full md:w-[768px] flex flex-col justify-center items-center px-7 py-10 mb-[100px] md:mb-[40px] md:px-10 md:py-10 lg:shadow-lg gap-10 text-center"
+        className="bg-white w-full md:w-[768px] flex flex-col justify-center items-center px-7 py-10 mb-[100px] md:mb-[40px] md:px-10 md:py-10 lg:shadow-lg gap-8 text-center"
         variants={staggerMotion}
         initial="start"
         whileInView="end"
@@ -17,8 +17,8 @@ const AboutMePage = () => {
           <img
             src="/images/sieun-profile.jpg"
             alt="profile"
-            width="250"
-            height="250"
+            width="200"
+            height="200"
           />
         </motion.div>
 
@@ -110,6 +110,36 @@ const AboutMePage = () => {
             />
           </span>
           을 실현하는 것이 제 가장 큰 강점이라고 자부합니다.
+        </motion.p>
+        <motion.p
+          variants={commonMotion}
+          className="whitespace-pre-wrap break-keep text-sm leading-6"
+        >
+          앞으로는
+          <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+            <span className="z-10 relative font-semibold">
+              사용자 경험과 개발 효율성
+            </span>
+            <span
+              className={`absolute bottom-0 left-0 h-[10px] bg-[#baffda] w-full`}
+            />
+          </span>
+          을 동시에 만족시키는 프론트엔드 개발자로 성장하고자 합니다.
+          <br />
+          더욱 견고한 코드 작성 능력과 최신 기술에 대한 탐구를 통해 프로젝트의
+          완성도를 높이고, 사용자의 요구를 깊이 이해하며 이를 구현해내는
+          전문성과 창의성을 갖춘 개발자가 되고 싶습니다. 또한, 지금까지 저의
+          멘토가 되어 주었던 수많은 시니어 개발자들처럼, 기술적 성과뿐만 아니라
+          팀원들과 함께 성장하며 긍정적인 영향을 미칠 수 있는
+          <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+            <span className="z-10 relative font-semibold">
+              리더십 있는 개발자
+            </span>
+            <span
+              className={`absolute bottom-0 left-0 h-[10px] bg-[#baffda] w-full`}
+            />
+          </span>
+          로 나아가는 것을 목표로 하고 있습니다.
         </motion.p>
       </motion.div>
     </article>

@@ -59,7 +59,8 @@ const AboutMePage = () => {
             />
           </span>
           을 수행해왔으며,
-          <br /> 회원가입, 멤버십, 마이페이지, 주문/배송 조회 등{" "}
+          <br />
+          회원가입, 멤버십, 마이페이지, 주문/배송 조회 등{" "}
           <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
             <span className="z-10 relative font-semibold">
               복잡한 비즈니스 로직 구현

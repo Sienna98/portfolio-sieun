@@ -36,7 +36,7 @@ export const menuList = [
   //   ],
   // },
   {
-    category: "Clone Coding",
+    category: "Clone Coding (desktop)",
     list: [
       {
         title: "Starbucks",

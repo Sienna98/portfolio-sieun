@@ -44,6 +44,7 @@ const JamongdaPage = () => {
             alt="jamongda"
             width="740"
             height="398"
+            loading="eager"
             priority
           />
           <p className="text-sm whitespace-pre-wrap break-keep">

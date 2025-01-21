@@ -1,7 +1,18 @@
+"use client";
+
 import { ExperienceList } from "@/data/experienceData";
 import Image from "next/image";
+import { useState } from "react";
 
 const ExperiencePage = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(!isOpen);
+  };
+
+  console.log(isOpen);
+
   return (
     <article className="px-5 pb-5 mb-[60px] md:mb-8 md:px-8 md:pb-8 min-w-[375px]">
       {ExperienceList.map((experience, idx) => (
@@ -31,17 +42,50 @@ const ExperiencePage = () => {
                 <div className="mt-2 md:pl-2">
                   <ul className="flex flex-col gap-5">
                     {experience.list.map((contents, idx) => (
-                      <li key={idx} className="flex flex-col gap-2">
-                        {"subTitle" in contents && (
-                          <h4 className="font-semibold text-sm">
-                            {contents.subTitle}
-                          </h4>
-                        )}
-                        <ul className="flex flex-col gap-2">
+                      <li key={idx} className="flex flex-col">
+                        {"subTitle" in contents &&
+                          (contents.subTitle === "이슈 해결하기" ? (
+                            <div
+                              className="flex items-center gap-1"
+                              onClick={handleOpen}
+                              role="button"
+                            >
+                              <h4 className="font-semibold text-sm">
+                                {contents.subTitle}
+                              </h4>
+                              <img
+                                src="/icons/arrow-down.svg"
+                                alt="펼치기"
+                                width={20}
+                                height={20}
+                                className={`${
+                                  isOpen
+                                    ? "transform rotate-180 transition"
+                                    : "transform rotate-0 transition"
+                                }`}
+                              />
+                            </div>
+                          ) : (
+                            <h4 className="font-semibold text-sm">
+                              {contents.subTitle}
+                            </h4>
+                          ))}
+                        <ul
+                          className={`flex flex-col gap-2 ${
+                            "subTitle" in contents &&
+                            contents.subTitle === "이슈 해결하기"
+                              ? isOpen
+                                ? "max-h-[1000px] overflow-hidden transition-all duration-500 ease-in-out"
+                                : "max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+                              : ""
+                          }`}
+                        >
                           {contents.contents.map((content, idx) => (
                             <li
                               key={idx}
-                              className="before:content-['-'] before:pr-1.5 text-sm flex whitespace-pre-wrap break-keep"
+                              className={`before:content-['-'] before:pr-1.5 text-sm flex whitespace-pre-wrap break-keep ${
+                                idx === 0 ? "pt-2" : ""
+                              }`}
                             >
                               {content}
                             </li>
@@ -58,8 +102,9 @@ const ExperiencePage = () => {
                         alt={img.alt}
                         width={img.width}
                         height={img.height}
+                        loading="eager"
                         priority
-                        className="pt-8"
+                        className="pt-6"
                       />
                     ))}
                   <ul className="mt-8 flex flex-wrap gap-2">

@@ -42,6 +42,7 @@ const PurplePlacePage = () => {
             alt="purple place"
             width="700"
             height="390"
+            loading="eager"
             priority
           />
           <p className="text-sm whitespace-pre-wrap break-keep">
@@ -56,6 +57,7 @@ const PurplePlacePage = () => {
             alt="purple place"
             width="700"
             height="390"
+            loading="eager"
             priority
           />
           <p className="text-sm whitespace-pre-wrap break-keep">

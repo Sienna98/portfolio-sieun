@@ -35,20 +35,20 @@ export const menuList = [
   //     { title: "Selector", link: "/Selector", type: "router" },
   //   ],
   // },
-  {
-    category: "Clone Coding (desktop)",
-    list: [
-      {
-        title: "Starbucks",
-        link: "https://elegant-begonia-dba8ef.netlify.app",
-        type: "window",
-      },
-      { title: "Movv", link: "https://unrivaled-longma-60ac49.netlify.app" },
-      {
-        title: "Nongshim nav",
-        link: "https://silver-frangollo-742fe8.netlify.app",
-        type: "window",
-      },
-    ],
-  },
+  // {
+  //   category: "Clone Coding (desktop)",
+  //   list: [
+  //     {
+  //       title: "Starbucks",
+  //       link: "https://elegant-begonia-dba8ef.netlify.app",
+  //       type: "window",
+  //     },
+  //     { title: "Movv", link: "https://unrivaled-longma-60ac49.netlify.app" },
+  //     {
+  //       title: "Nongshim nav",
+  //       link: "https://silver-frangollo-742fe8.netlify.app",
+  //       type: "window",
+  //     },
+  //   ],
+  // },
 ];

@@ -11,7 +11,21 @@ export const ExperienceList = [
         list: [
           {
             contents: [
-              "Next.js 14 App Router 방식을 활용한 신규 프로젝트로 코오롱몰의 전체 디자인과 개발 리뉴얼 작업 진행.",
+              <div className="leading-6 mt-1.5">
+                <span>
+                  Next.js 14 App Router 방식을 활용한 신규 프로젝트로 코오롱몰의
+                  전체 디자인과 개발 리뉴얼 작업 진행.
+                </span>
+                &nbsp;&nbsp;
+                <a
+                  href="https://velog.io/@tldms0827/App-Router-with-Next.js-13"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#969696] border-b border-gray-600"
+                >
+                  블로그 글 바로가기 (링크)
+                </a>
+              </div>,
               <div className="leading-6 mt-1.5">
                 <span>
                   CSR, SSR, RSC의 장단점을 분석해 상황별 최적의 렌더링 방식을

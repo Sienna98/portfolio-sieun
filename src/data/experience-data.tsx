@@ -68,6 +68,15 @@ export const ExperienceList = [
                   또한 Dynamic Import로 필요한 시점에 약관 파일을 불러올 수
                   있도록하고, 로딩시간동안 화면에 보여줄 UI도 추가로 작업함.
                 </span>
+                &nbsp;&nbsp;
+                <a
+                  href="https://velog.io/@tldms0827/NextJS-dynamic-import-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#969696] border-b border-gray-600"
+                >
+                  이슈 해결 블로그 글 바로가기 (링크)
+                </a>
               </div>,
               <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">

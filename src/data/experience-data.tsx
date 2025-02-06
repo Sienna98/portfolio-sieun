@@ -11,7 +11,7 @@ export const ExperienceList = [
         list: [
           {
             contents: [
-              <div className="leading-6 mt-1.5">
+              <div className="leading-6 mt-1.5 flex items-center">
                 <span>
                   Next.js 14 App Router 방식을 활용한 신규 프로젝트로 코오롱몰의
                   전체 디자인과 개발 리뉴얼 작업 진행.
@@ -21,12 +21,12 @@ export const ExperienceList = [
                   href="https://velog.io/@tldms0827/App-Router-with-Next.js-13"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#969696] border-b border-gray-600"
+                  className="text-[#969696] underline text-xs"
                 >
                   블로그 글 바로가기 (링크)
                 </a>
               </div>,
-              <div className="leading-6 mt-1.5">
+              <div className="leading-6 mt-1.5 flex items-center">
                 <span>
                   CSR, SSR, RSC의 장단점을 분석해 상황별 최적의 렌더링 방식을
                   적용, 효율적이고 유연한 아키텍처 구현.
@@ -36,7 +36,7 @@ export const ExperienceList = [
                   href="https://velog.io/@tldms0827/Next.jsCSRSSRRSC-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#969696] border-b border-gray-600"
+                  className="text-[#969696] underline text-xs"
                 >
                   블로그 글 바로가기 (링크)
                 </a>
@@ -68,7 +68,7 @@ export const ExperienceList = [
                   한번에 로드하는 것이 효과적이지 못하다고 판단함.
                 </span>
               </div>,
-              <div className="leading-6 mt-1.5">
+              <div className="leading-6 mt-1.5 flex items-center">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [해결] </span>
                   <span
@@ -87,12 +87,12 @@ export const ExperienceList = [
                   href="https://velog.io/@tldms0827/NextJS-dynamic-import-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#969696] border-b border-gray-600"
+                  className="text-[#969696] underline text-xs"
                 >
                   이슈 해결 블로그 글 바로가기 (링크)
                 </a>
               </div>,
-              <div className="leading-6 mt-1.5">
+              <div className="leading-6 mt-1.5 flex items-center">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [문제] </span>
                   <span
@@ -112,7 +112,7 @@ export const ExperienceList = [
                   발생함.
                 </span>
               </div>,
-              <div className="leading-6 mt-1.5">
+              <div className="leading-6 mt-1.5 flex items-center">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [해결] </span>
                   <span
@@ -133,7 +133,7 @@ export const ExperienceList = [
                   href="https://velog.io/@tldms0827/%EC%8B%A4%EB%AC%B4%EC%97%90%EC%84%9C-%EB%B0%9C%EA%B2%AC%ED%95%9C-useContext-%EA%B8%B0%EC%8A%B9%EC%A0%84%EA%B2%B0"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#969696] border-b border-gray-600"
+                  className="text-[#969696] underline text-xs"
                 >
                   이슈 해결 블로그 글 바로가기 (링크)
                 </a>

@@ -21,7 +21,7 @@ export const ExperienceList = [
                   href="https://velog.io/@tldms0827/App-Router-with-Next.js-13"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#969696] border-b border-gray-600"
+                  className="text-[#969696] border-b border-gray-600 text-xs"
                 >
                   블로그 글 바로가기 (링크)
                 </a>
@@ -50,7 +50,7 @@ export const ExperienceList = [
           {
             subTitle: "이슈 해결하기",
             contents: [
-              <div className="leading-5">
+              <div className="leading-6">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [문제] </span>
                   <span
@@ -68,7 +68,7 @@ export const ExperienceList = [
                   한번에 로드하는 것이 효과적이지 못하다고 판단함.
                 </span>
               </div>,
-              <div className="leading-5 mt-1.5">
+              <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [해결] </span>
                   <span
@@ -92,7 +92,7 @@ export const ExperienceList = [
                   이슈 해결 블로그 글 바로가기 (링크)
                 </a>
               </div>,
-              <div className="leading-5 mt-1.5">
+              <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [문제] </span>
                   <span
@@ -112,7 +112,7 @@ export const ExperienceList = [
                   발생함.
                 </span>
               </div>,
-              <div className="leading-5 mt-1.5">
+              <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [해결] </span>
                   <span
@@ -175,7 +175,7 @@ export const ExperienceList = [
           {
             subTitle: "이슈 해결하기",
             contents: [
-              <div className="leading-5">
+              <div className="leading-6">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [문제] </span>
                   <span
@@ -192,7 +192,7 @@ export const ExperienceList = [
                   사용해야 하는 상황이라 해결이 어려웠음.
                 </span>
               </div>,
-              <div className="leading-5 mt-1.5">
+              <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [해결] </span>
                   <span
@@ -271,7 +271,7 @@ export const ExperienceList = [
           {
             subTitle: "이슈 해결하기",
             contents: [
-              <div className="leading-5">
+              <div className="leading-6">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [문제] </span>
                   <span
@@ -288,7 +288,7 @@ export const ExperienceList = [
                   사용해야 하는 상황이라 해결이 어려웠음.
                 </span>
               </div>,
-              <div className="leading-5 mt-1.5">
+              <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [해결] </span>
                   <span
@@ -304,7 +304,7 @@ export const ExperienceList = [
                   사용하며 서버 비용을 절감할 수 있었음.
                 </span>
               </div>,
-              <div className="leading-5">
+              <div className="leading-6">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [문제] </span>
                   <span
@@ -320,7 +320,7 @@ export const ExperienceList = [
                   이슈가 발생함.
                 </span>
               </div>,
-              <div className="leading-5 mt-1.5">
+              <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [해결] </span>
                   <span
@@ -333,7 +333,7 @@ export const ExperienceList = [
                   수정함.
                 </span>
               </div>,
-              <div className="leading-5">
+              <div className="leading-6">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [장애] </span>
                   <span
@@ -352,7 +352,7 @@ export const ExperienceList = [
                   발생함.
                 </span>
               </div>,
-              <div className="leading-5 mt-1.5">
+              <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [해결] </span>
                   <span
@@ -439,7 +439,7 @@ export const ExperienceList = [
           {
             subTitle: "이슈 해결하기",
             contents: [
-              <div className="leading-5">
+              <div className="leading-6">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [문제] </span>
                   <span
@@ -457,7 +457,7 @@ export const ExperienceList = [
                   못하는 이슈가 발생.
                 </span>
               </div>,
-              <div className="leading-5 mt-1.5">
+              <div className="leading-6 mt-1.5">
                 <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
                   <span className="z-10 relative font-semibold"> [해결] </span>
                   <span

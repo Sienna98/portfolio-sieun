@@ -1,14 +1,25 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import MobileSideBar from "./mobile-side-bar";
 import { handleCopyEmail } from "@/utils/copyEmail";
 import { EMAIL } from "@/constants/contact";
+import { useHandleNavigation } from "@/utils/handleNavigation";
 
 const FloatingButton = () => {
-  const router = useRouter();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const handleNavigation = useHandleNavigation();
+  const currentLang = searchParams.get("lang") || "ko";
+  const newLang = currentLang === "en" ? "ko" : "en";
+
+  const toggleLanguage = () => {
+    const params = new URLSearchParams(searchParams);
+    params.set("lang", newLang);
+    router.push(`?${params.toString()}`, { scroll: false });
+  };
 
   return (
     <>
@@ -71,8 +82,16 @@ const FloatingButton = () => {
           </button>
           <button
             className=" bg-white rounded-full shadow"
+            onClick={toggleLanguage}
+          >
+            <span className="flex justify-center items-center w-11 h-11 hover:opacity-60 transition font-semibold">
+              {newLang ? "KO" : "EN"}
+            </span>
+          </button>
+          <button
+            className=" bg-white rounded-full shadow"
             onClick={() => {
-              router.push("/");
+              handleNavigation("/");
               setIsSidebarOpen(false);
             }}
           >

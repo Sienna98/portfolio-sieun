@@ -3,7 +3,8 @@
 import { EMAIL } from "@/constants/contact";
 import { menuList } from "@/data/side-bar-menu-list";
 import { handleCopyEmail } from "@/utils/copyEmail";
-import { usePathname, useRouter } from "next/navigation";
+import { useHandleNavigation } from "@/utils/handleNavigation";
+import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
 
 interface SideBarProps {
@@ -11,9 +12,9 @@ interface SideBarProps {
 }
 
 const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
-  const router = useRouter();
   const pathName = usePathname();
   const currentDate = new Date();
+  const handleNavigation = useHandleNavigation();
 
   return (
     <div className="flex w-full h-full fixed top-0 left-0 gap-1">
@@ -45,7 +46,7 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
                           className="relative z-10 transition-all duration-300 transform"
                           onClick={() => {
                             if (item.type === "router") {
-                              router.push(item.link);
+                              handleNavigation(item.link);
                             } else {
                               window.open(item.link, "_blank");
                             }

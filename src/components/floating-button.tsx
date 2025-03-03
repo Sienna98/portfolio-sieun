@@ -85,7 +85,7 @@ const FloatingButton = () => {
             onClick={toggleLanguage}
           >
             <span className="flex justify-center items-center w-11 h-11 hover:opacity-60 transition font-semibold">
-              {newLang ? "KO" : "EN"}
+              {newLang.toUpperCase()}
             </span>
           </button>
           <button

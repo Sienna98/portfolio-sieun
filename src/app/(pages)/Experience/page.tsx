@@ -1,6 +1,6 @@
 "use client";
 
-import { ExperienceList } from "@/data/experience-data";
+import { ExperienceListKo } from "@/data/ko/experience-data";
 import { commonMotion, staggerMotion } from "@/motions/common-motions";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -18,10 +18,10 @@ const ExperiencePage = () => {
 
   return (
     <article className="px-5 pb-5 mb-[60px] md:mb-8 md:px-8 md:pb-8 min-w-[375px]">
-      {ExperienceList.map((experience, idx) => (
+      {ExperienceListKo.map((experience, idx) => (
         <div
           className={`block py-14 md:flex gap-3 ${
-            idx !== ExperienceList.length - 1 ? "border-b" : ""
+            idx !== ExperienceListKo.length - 1 ? "border-b" : ""
           }`}
           key={idx}
         >

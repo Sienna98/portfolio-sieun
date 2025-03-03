@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-key */
-export const ExperienceList = [
+export const ExperienceListKo = [
   {
     title: "퍼플아이오",
     date: "2023.02 - 현재 재직중",

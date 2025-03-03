@@ -1,6 +1,6 @@
 "use client";
 
-import { purplePlaceData } from "@/data/side-project-data";
+import { purplePlaceDataKo } from "@/data/ko/side-project-data";
 import { commonMotion, staggerMotion } from "@/motions/common-motions";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -95,14 +95,14 @@ const PurplePlacePage = () => {
           </motion.p>
         </motion.div>
 
-        {purplePlaceData.map((data, idx) => (
+        {purplePlaceDataKo.map((data, idx) => (
           <motion.div
             variants={commonMotion}
             initial="start"
             whileInView="end"
             viewport={{ once: true, amount: 0.5 }}
             className={`w-full ${
-              idx !== purplePlaceData.length - 1 ? "border-b pb-8" : ""
+              idx !== purplePlaceDataKo.length - 1 ? "border-b pb-8" : ""
             }`}
             key={idx}
           >

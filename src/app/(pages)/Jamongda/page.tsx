@@ -1,6 +1,6 @@
 "use client";
 
-import { jamongdaData } from "@/data/side-project-data";
+import { jamongdaDataKo } from "@/data/ko/side-project-data";
 import { commonMotion, staggerMotion } from "@/motions/common-motions";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -82,14 +82,14 @@ API 제작 및 연동 등을 직접 진행하면서 많은 것을 배울 수 있
 `}
           </motion.p>
         </motion.div>
-        {jamongdaData.map((data, idx) => (
+        {jamongdaDataKo.map((data, idx) => (
           <motion.div
             variants={commonMotion}
             initial="start"
             whileInView="end"
             viewport={{ once: true, amount: 0.5 }}
             className={`w-full ${
-              idx !== jamongdaData.length - 1 ? "border-b pb-8" : ""
+              idx !== jamongdaDataKo.length - 1 ? "border-b pb-8" : ""
             }`}
             key={idx}
           >

@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-key */
-export const purplePlaceData = [
+export const purplePlaceDataKo = [
   {
     title: "📍주요 기능",
     list: [
@@ -22,7 +22,7 @@ export const purplePlaceData = [
   },
 ];
 
-export const jamongdaData = [
+export const jamongdaDataKo = [
   {
     title: "📍주요 기능",
     list: [

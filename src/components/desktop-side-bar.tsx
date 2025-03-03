@@ -18,7 +18,7 @@ const DesktopSideBar: React.FC<SideBarProps> = ({ children }) => {
 
   return (
     <div className="flex w-full h-full fixed top-0 left-0 gap-1">
-      <div className="hidden md:flex h-full md:w-[160px] lg:w-[230px]  shadow-md">
+      <div className="hidden md:flex h-full md:w-[160px] lg:w-[230px] shadow-md">
         <aside className="h-[100dvh] z-10 overflow-y-auto flex flex-col w-full justify-between">
           <div>
             {menuList.map((menu, idx) => (

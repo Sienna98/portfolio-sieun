@@ -44,6 +44,3 @@ const AboutMePage = () => {
 };
 
 export default AboutMePage;
-function useQueryParams() {
-  throw new Error("Function not implemented.");
-}

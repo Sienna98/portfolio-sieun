@@ -70,16 +70,25 @@ const FloatingButton = () => {
             >
               <img src="/icons/email.svg" alt="email" width="20" height="20" />
             </button>
+            <button
+              className=" bg-white rounded-full shadow"
+              onClick={() => {
+                handleNavigation("/");
+                setIsSidebarOpen(false);
+              }}
+            >
+              <img
+                src="/icons/home.svg"
+                alt="홈"
+                width="20"
+                height="20"
+                className="block p-3 w-11 h-11 hover:opacity-60 transition"
+              />
+            </button>
           </div>
         </>
       ) : (
         <div className="flex flex-col gap-2 fixed bottom-[30px] right-[20px] z-30 cursor-pointer">
-          <button
-            className="p-3 bg-white rounded-full shadow md:hidden"
-            onClick={() => setIsSidebarOpen(true)}
-          >
-            <img src="/icons/menu.svg" alt="메뉴" width="20" height="20" />
-          </button>
           <button
             className=" bg-white rounded-full shadow"
             onClick={toggleLanguage}
@@ -89,7 +98,13 @@ const FloatingButton = () => {
             </span>
           </button>
           <button
-            className=" bg-white rounded-full shadow"
+            className="p-3 bg-white rounded-full shadow md:hidden"
+            onClick={() => setIsSidebarOpen(true)}
+          >
+            <img src="/icons/menu.svg" alt="메뉴" width="20" height="20" />
+          </button>
+          <button
+            className=" bg-white rounded-full shadow hidden md:block"
             onClick={() => {
               handleNavigation("/");
               setIsSidebarOpen(false);

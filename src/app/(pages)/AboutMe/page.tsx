@@ -42,8 +42,14 @@ const AboutMePage = () => {
           UI/UX 설계와 인터랙션 구현에 대한 전문성을 체계적으로 확장해왔습니다.
           <br />
           뿐만 아니라, 퍼블리싱 경험을 바탕으로 시맨틱 코딩과 DOM 구조에 대한
-          깊은 이해를 쌓았으며, <br /> 접근성과 SEO를 고려한 구조적인 마크업에
-          강점을 갖추었습니다.
+          깊은 이해를 쌓았으며, <br />
+          <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+            <span className="z-10 relative font-semibold">접근성과 SEO</span>
+            <span
+              className={`absolute bottom-0 left-0 h-[10px] bg-[#baffda] w-full`}
+            />
+          </span>
+          를 고려한 구조적인 마크업에 강점을 갖추었습니다.
           <br />
         </motion.p>
 

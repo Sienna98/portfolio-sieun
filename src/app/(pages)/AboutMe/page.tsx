@@ -27,7 +27,8 @@ const AboutMePage = () => {
           className="whitespace-pre-wrap break-keep text-sm leading-6"
         >
           안녕하세요. 프론트엔드 개발자 이시은입니다. <br />
-          2021년 웹 디자인과 퍼블리싱 분야에서 커리어를 시작한 이후 지난 4년동안
+          2021년 웹 디자인/퍼블리싱으로 커리어를 시작해 2년의 경험을 쌓은 후,
+          프론트엔드 개발로 전향해 2년간
           <br /> 최신 프론트엔드 기술 스택
           <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
             <span className="z-10 relative font-semibold">
@@ -37,13 +38,13 @@ const AboutMePage = () => {
               className={`absolute bottom-0 left-0 h-[10px] bg-[#baffda] w-full`}
             />
           </span>
-          을 적극적으로 도입하여 <br />
+          을 적극적으로 활용하며 <br />
           UI/UX 설계와 인터랙션 구현에 대한 전문성을 체계적으로 확장해왔습니다.
           <br />
-          디자인과 퍼블리싱 경험을 바탕으로 DOM 구조와 시맨틱 코딩에 깊은 이해를
-          보유하고 있으며, <br />
-          React에 최적화된 렌더링 방식을 비교 분석하여 사용자 경험을 향상시키는
-          솔루션을 제공하고 있습니다.
+          뿐만 아니라, 퍼블리싱 경험을 바탕으로 시맨틱 코딩과 DOM 구조에 대한
+          깊은 이해를 쌓았으며, <br /> 접근성과 SEO를 고려한 구조적인 마크업에
+          강점을 갖추었습니다.
+          <br />
         </motion.p>
 
         <motion.p

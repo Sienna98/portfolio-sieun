@@ -6,6 +6,101 @@ export const ExperienceList = [
     team: "프로젝트 개발팀/프론트개발",
     contents: [
       {
+        title: "전시 스쿼드(운영)",
+        date: "2025.10 - 현재",
+        list: [
+          {
+            subTitle: "[프로젝트 개요]",
+            contents: [
+              "BX 프로젝트에 이어 코오롱몰 전시 영역 운영 및 UI/UX 부분 개편 프로젝트",
+              "컨텐츠 중심의 UI에서 상품 중심의 UI로 개편 작업 진행",
+            ],
+          },
+          {
+            subTitle: "[주요 업무]",
+            contents: [
+              "모바일 홈 개편 : 메인 배너 크기를 줄여 아래 콘텐츠가 보이도록 개선하여 사용자 유입 유도 및 신규 배너 컴포넌트 개발",
+              "모바일 브랜드관 전체 개편 : 자사 브랜드관 UI를 통일된 세일즈 패널 및 카테고리로 개편하고 입점 브랜드는 인스타그램형 UI 적용함. 이에 맞춰 CMS도 각 브랜드 유형에 맞게 구성 방식 및 입력 항목을 정비",
+              "믹스패널 연동으로 체류 시간, 클릭률 등 사용자 행동 데이터 확인 가능",
+            ],
+          },
+          {
+            subTitle: "[성과]",
+            contents: [
+              "메인 콘텐츠 클릭률 증가 7.82% -> 11.96%",
+              "메인 탭바를 바로 클릭해서 이탈하는 유저 감소 23.43% -> 17.97%",
+              "브랜드관 상품 전환률 25% → 31%",
+            ],
+          },
+          {
+            subTitle: "이슈 해결하기",
+            contents: [
+              <div className="leading-6">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [문제] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  <span className="font-semibold pl-1">
+                    &nbsp;폰트 길이에 따른 사이즈 조정 :&nbsp;
+                  </span>
+                  모바일 헤더 내 브랜드명이 텍스트로 입력될 때, 텍스트가 타이틀
+                  영역보다 길어지면 폰트 사이즈를 줄여달라는 요청이 있었음.
+                  초기에는 렌더링 이후 타이틀 영역 너비를 측정해 폰트 사이즈를
+                  조정했지만, 큰 폰트가 먼저 보였다가 깜빡이며 작아지는 문제가
+                  발생함. 이후 폰트 적용 후 화면에 표시되도록 처리했으나,
+                  렌더링이 지연되어 타이틀이 너무 늦게 나타나는 이슈가 발생함.
+                </span>
+              </div>,
+              <div className="leading-6 mt-1.5">
+                <span className="relative inline flex-shrink-0 flex-grow-0 basis-auto w-auto">
+                  <span className="z-10 relative font-semibold"> [해결] </span>
+                  <span
+                    className={`absolute bottom-0 left-0 h-full bg-[#baffda] w-full`}
+                  />
+                </span>
+                <span>
+                  &nbsp;타이틀 영역에는 무조건 영문만 들어오는 구조였기 때문에,
+                  알파벳별 너비를 사전에 맵에 기록해두는 방식을 사용함. 이후
+                  해당 텍스트를 파라미터로 받아 예상 너비를 계산하고, 타이틀
+                  영역보다 길 경우에는 true를 반환해 작은 폰트 사이즈를 바로
+                  적용하도록 수정함. 이 방식으로 깜빡임 없이 처음부터 작아진
+                  폰트가 적용된 상태로 화면에 노출되도록 해결함.
+                </span>
+                &nbsp;&nbsp;
+                {/* <a
+                  href="https://velog.io/@tldms0827/NextJS-dynamic-import-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EA%B8%B0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#969696] border-b border-gray-600"
+                >
+                  이슈 해결 블로그 글 바로가기 (링크)
+                </a> */}
+              </div>,
+            ],
+          },
+        ],
+        images: [
+          {
+            src: "/images/brand.png",
+            alt: "코오롱몰",
+            width: 700,
+            height: 350,
+          },
+        ],
+        skills: [
+          "React",
+          "TypeScript",
+          "Next.js App Router",
+          "Panda Css",
+          "react-hook-form",
+          "react-query",
+          "story-book",
+        ],
+      },
+      {
         title: "BX 프로젝트(코오롱몰 전체 리뉴얼)",
         date: "2024.01 - 2024.09",
         list: [

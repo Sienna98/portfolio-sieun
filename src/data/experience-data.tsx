@@ -7,7 +7,7 @@ export const ExperienceList = [
     contents: [
       {
         title: "전시 스쿼드(운영)",
-        date: "2025.10 - 현재",
+        date: "2024.10 - 현재",
         list: [
           {
             subTitle: "[프로젝트 개요]",
